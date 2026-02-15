@@ -1,0 +1,64 @@
+/* ===============================
+   GLOBAL
+================================ */
+body {
+  background: #0d0d0d;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* ===============================
+   CARD
+================================ */
+.quiz-card {
+  background: #1f2933;
+  border-radius: 16px;
+  padding: 40px 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* ===============================
+   BUTTON BASE
+================================ */
+.level-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* ===============================
+   HOVER EFFECT
+================================ */
+.level-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* ===============================
+   ACTIVE EFFECT
+================================ */
+.level-btn:active {
+  transform: scale(0.97);
+}
+
+/* ===============================
+   DIFFICULTY COLORS
+================================ */
+.level-btn.easy {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #ffffff;
+}
+
+.level-btn.medium {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #ffffff;
+}
+
+.level-btn.hard {
+  background: linear-gradient(135deg, #ef4444, #b91c1c);
+  color: #ffffff;
+}

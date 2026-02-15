@@ -1,14 +1,28 @@
 // ============================================
-// QUIZ STATE
+// CONFIG
+// ============================================
+const QUESTIONS_PER_QUIZ = 10;
+
+// ============================================
+// STATE
 // ============================================
 let index = 0;
 let correct = 0;
 let wrong = 0;
 
-// Clone & shuffle QUESTIONS once (not options yet)
-const questions = [...htmlQuestions].sort(() => Math.random() - 0.5);
+const selectedLevel = localStorage.getItem("selectedLevel");
 
-// DOM ELEMENTS
+// Filter by difficulty
+const filtered = htmlQuestions.filter(
+  q => q.level === selectedLevel
+);
+
+// Shuffle questions and pick ONLY 10
+const questions = filtered
+  .sort(() => Math.random() - 0.5)
+  .slice(0, QUESTIONS_PER_QUIZ);
+
+// DOM
 const qText = document.getElementById("questionText");
 const optionsBox = document.getElementById("optionsContainer");
 const explanationBox = document.getElementById("explanationBox");
@@ -17,7 +31,7 @@ const nextBtn = document.getElementById("nextBtn");
 const backBtn = document.getElementById("backBtn");
 
 // ============================================
-// SAFE OPTION SHUFFLE (KEEPS CORRECT ANSWER)
+// SAFE OPTION SHUFFLE
 // ============================================
 function shuffleOptions(options, correctIndex) {
   const mapped = options.map((opt, i) => ({
@@ -37,12 +51,11 @@ function shuffleOptions(options, correctIndex) {
 }
 
 // ============================================
-// RENDER QUESTION
+// RENDER
 // ============================================
 function render() {
   const rawQ = questions[index];
 
-  // Shuffle OPTIONS safely for every render
   const shuffled = shuffleOptions(
     rawQ.options,
     rawQ.correctIndex
@@ -55,16 +68,13 @@ function render() {
     explanation: rawQ.explanation
   };
 
-  // UI updates
   qText.textContent = q.question;
-  counter.textContent = `Question ${index + 1} / ${questions.length}`;
+  counter.textContent = `Question ${index + 1} / ${QUESTIONS_PER_QUIZ}`;
 
   optionsBox.innerHTML = "";
   explanationBox.classList.add("d-none");
-  explanationBox.textContent = "";
   nextBtn.disabled = true;
 
-  // Render options
   q.options.forEach((opt, i) => {
     const btn = document.createElement("button");
     btn.className = "list-group-item list-group-item-action";
@@ -77,12 +87,10 @@ function render() {
 }
 
 // ============================================
-// CHECK ANSWER (100% CORRECT LOGIC)
+// CHECK ANSWER
 // ============================================
 function checkAnswer(selectedIndex, q) {
   const buttons = document.querySelectorAll(".list-group-item");
-
-  // Disable all options
   buttons.forEach(b => (b.disabled = true));
 
   if (selectedIndex === q.correctIndex) {
@@ -105,13 +113,14 @@ function checkAnswer(selectedIndex, q) {
 nextBtn.onclick = () => {
   index++;
 
-  if (index >= questions.length) {
+  if (index >= QUESTIONS_PER_QUIZ) {
     localStorage.setItem(
       "result",
       JSON.stringify({
+        level: selectedLevel,
         correct,
         wrong,
-        total: questions.length
+        total: QUESTIONS_PER_QUIZ
       })
     );
     window.location.href = "result.html";
@@ -127,6 +136,6 @@ backBtn.onclick = () => {
 };
 
 // ============================================
-// START QUIZ
+// START
 // ============================================
 render();
