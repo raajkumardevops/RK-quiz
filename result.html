@@ -2,23 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Result</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Result | Fundamental Quiz App</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
 </head>
 
 <body class="bg-dark text-light">
+
 <div class="container min-vh-100 d-flex justify-content-center align-items-center">
-  <div class="card bg-secondary p-4 text-center">
-    <h3>Quiz Result</h3>
-    <p id="resultText"></p>
-    <button class="btn btn-warning" onclick="location.href='index.html'">Home</button>
+
+  <div class="card bg-secondary p-4 text-center" style="max-width:500px;width:100%;">
+
+    <h3 class="mb-3">Quiz Result</h3>
+
+    <p id="topicText" class="fw-semibold"></p>
+
+    <p id="totalText"></p>
+    <p id="correctText"></p>
+    <p id="wrongText"></p>
+
+    <h4 id="scoreText" class="mt-2"></h4>
+    <p id="bestScoreText" class="text-warning"></p>
+
+    <div class="d-flex justify-content-between mt-4">
+      <button id="restartBtn" class="btn btn-warning w-50 me-2">
+        Retry
+      </button>
+      <button id="homeBtn" class="btn btn-light w-50 ms-2">
+        Home
+      </button>
+    </div>
+
   </div>
+
 </div>
 
+<!-- Storage FIRST -->
+<script src="js/storage.js"></script>
+
+<!-- Result Logic -->
+<script src="js/result.js"></script>
+
 <script>
-  const r = JSON.parse(localStorage.getItem("result"));
-  document.getElementById("resultText").textContent =
-    `Correct: ${r.correct} | Wrong: ${r.wrong}`;
+  loadResultPage();
 </script>
+
 </body>
 </html>

@@ -1,0 +1,217 @@
+[
+
+  {
+    "level": "easy",
+    "question": "What is JavaScript?",
+    "options": ["A programming language", "A database", "A browser", "An OS"],
+    "correctIndex": 0,
+    "explanation": "JavaScript is a programming language used to create dynamic web pages."
+  },
+  {
+    "level": "easy",
+    "question": "Which keyword declares a variable?",
+    "options": ["var", "let", "const", "All of the above"],
+    "correctIndex": 3,
+    "explanation": "var, let and const can all declare variables."
+  },
+  {
+    "level": "easy",
+    "question": "Which symbol is used for single-line comments?",
+    "options": ["//", "/* */", "#", "<!-- -->"],
+    "correctIndex": 0,
+    "explanation": "// is used for single-line comments."
+  },
+  {
+    "level": "easy",
+    "question": "Which function prints output to console?",
+    "options": ["console.log()", "print()", "log()", "output()"],
+    "correctIndex": 0,
+    "explanation": "console.log() prints output to the browser console."
+  },
+  {
+    "level": "easy",
+    "question": "Which data type stores true or false?",
+    "options": ["Boolean", "String", "Number", "Object"],
+    "correctIndex": 0,
+    "explanation": "Boolean stores true or false."
+  },
+  {
+    "level": "easy",
+    "question": "Which operator is used for addition?",
+    "options": ["+", "-", "*", "/"],
+    "correctIndex": 0,
+    "explanation": "+ is the addition operator."
+  },
+  {
+    "level": "easy",
+    "question": "Which keyword defines a constant?",
+    "options": ["const", "let", "var", "static"],
+    "correctIndex": 0,
+    "explanation": "const defines a constant variable."
+  },
+  {
+    "level": "easy",
+    "question": "Which method converts string to number?",
+    "options": ["Number()", "String()", "parseString()", "toString()"],
+    "correctIndex": 0,
+    "explanation": "Number() converts string to number."
+  },
+  {
+    "level": "easy",
+    "question": "Which value represents no value?",
+    "options": ["null", "false", "0", "\"\""],
+    "correctIndex": 0,
+    "explanation": "null represents no value."
+  },
+  {
+    "level": "easy",
+    "question": "Which loop runs at least once?",
+    "options": ["do...while", "for", "while", "foreach"],
+    "correctIndex": 0,
+    "explanation": "do...while runs at least once."
+  },
+
+ 
+  {
+    "level": "medium",
+    "question": "Which method converts JSON to object?",
+    "options": ["JSON.parse()", "JSON.stringify()", "parseJSON()", "toObject()"],
+    "correctIndex": 0,
+    "explanation": "JSON.parse() converts JSON string to object."
+  },
+  {
+    "level": "medium",
+    "question": "What is a closure?",
+    "options": ["Function with preserved scope", "Loop", "Callback", "Promise"],
+    "correctIndex": 0,
+    "explanation": "Closure allows a function to remember its scope."
+  },
+  {
+    "level": "medium",
+    "question": "Which keyword is used for async function?",
+    "options": ["async", "await", "promise", "defer"],
+    "correctIndex": 0,
+    "explanation": "async keyword defines async function."
+  },
+  {
+    "level": "medium",
+    "question": "Which method adds element to end of array?",
+    "options": ["push()", "pop()", "shift()", "unshift()"],
+    "correctIndex": 0,
+    "explanation": "push() adds element to end."
+  },
+  {
+    "level": "medium",
+    "question": "Which method removes last array element?",
+    "options": ["pop()", "push()", "shift()", "slice()"],
+    "correctIndex": 0,
+    "explanation": "pop() removes last element."
+  },
+  {
+    "level": "medium",
+    "question": "Which operator checks value and type?",
+    "options": ["===", "==", "=", "!="],
+    "correctIndex": 0,
+    "explanation": "=== checks value and type."
+  },
+  {
+    "level": "medium",
+    "question": "Which function delays execution?",
+    "options": ["setTimeout()", "setInterval()", "delay()", "timeout()"],
+    "correctIndex": 0,
+    "explanation": "setTimeout delays execution."
+  },
+  {
+    "level": "medium",
+    "question": "Which array method creates new array?",
+    "options": ["map()", "forEach()", "push()", "pop()"],
+    "correctIndex": 0,
+    "explanation": "map() returns new array."
+  },
+  {
+    "level": "medium",
+    "question": "Which keyword stops loop?",
+    "options": ["break", "stop", "exit", "return"],
+    "correctIndex": 0,
+    "explanation": "break stops loop."
+  },
+  {
+    "level": "medium",
+    "question": "Which scope is default in JS?",
+    "options": ["Global", "Block", "Function", "Local"],
+    "correctIndex": 0,
+    "explanation": "Global scope is default."
+  },
+
+  
+  {
+    "level": "hard",
+    "question": "What does event loop handle?",
+    "options": ["Async operations", "HTML parsing", "CSS rendering", "Thread creation"],
+    "correctIndex": 0,
+    "explanation": "Event loop handles async callbacks."
+  },
+  {
+    "level": "hard",
+    "question": "Which is NOT a primitive type?",
+    "options": ["Object", "String", "Number", "Boolean"],
+    "correctIndex": 0,
+    "explanation": "Object is non-primitive."
+  },
+  {
+    "level": "hard",
+    "question": "What is hoisting?",
+    "options": ["Variable moved to top", "Function execution", "Async handling", "Memory leak"],
+    "correctIndex": 0,
+    "explanation": "Hoisting moves declarations to top."
+  },
+  {
+    "level": "hard",
+    "question": "Which method deep copies object?",
+    "options": ["structuredClone()", "Object.assign()", "spread operator", "copy()"],
+    "correctIndex": 0,
+    "explanation": "structuredClone performs deep copy."
+  },
+  {
+    "level": "hard",
+    "question": "Which keyword creates promise?",
+    "options": ["new Promise()", "async", "await", "then"],
+    "correctIndex": 0,
+    "explanation": "Promise is created using new Promise()."
+  },
+  {
+    "level": "hard",
+    "question": "Which array method flattens array?",
+    "options": ["flat()", "map()", "reduce()", "concat()"],
+    "correctIndex": 0,
+    "explanation": "flat() flattens arrays."
+  },
+  {
+    "level": "hard",
+    "question": "Which operator spreads array?",
+    "options": ["...", "=>", "??", "::"],
+    "correctIndex": 0,
+    "explanation": "Spread operator expands arrays."
+  },
+  {
+    "level": "hard",
+    "question": "What is temporal dead zone?",
+    "options": ["Accessing let before declaration", "Memory leak", "Scope error", "Async issue"],
+    "correctIndex": 0,
+    "explanation": "TDZ occurs when accessing let before declaration."
+  },
+  {
+    "level": "hard",
+    "question": "Which method handles fulfilled promise?",
+    "options": ["then()", "catch()", "finally()", "resolve()"],
+    "correctIndex": 0,
+    "explanation": "then() handles fulfilled promise."
+  },
+  {
+    "level": "hard",
+    "question": "Which statement handles errors?",
+    "options": ["try...catch", "if...else", "switch", "throw"],
+    "correctIndex": 0,
+    "explanation": "try...catch handles runtime errors."
+  }
+]

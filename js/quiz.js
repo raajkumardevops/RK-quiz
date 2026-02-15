@@ -4,25 +4,23 @@
 const QUESTIONS_PER_QUIZ = 10;
 
 // ============================================
-// STATE
+// GET USER SELECTION
 // ============================================
+const selectedTopic = localStorage.getItem("selectedTopic");
+const selectedLevel = localStorage.getItem("selectedLevel");
+
+// ============================================
+// GLOBAL STATE
+// ============================================
+let allQuestions = [];
+let questions = [];
 let index = 0;
 let correct = 0;
 let wrong = 0;
 
-const selectedLevel = localStorage.getItem("selectedLevel");
-
-// Filter by difficulty
-const filtered = htmlQuestions.filter(
-  q => q.level === selectedLevel
-);
-
-// Shuffle questions and pick ONLY 10
-const questions = filtered
-  .sort(() => Math.random() - 0.5)
-  .slice(0, QUESTIONS_PER_QUIZ);
-
-// DOM
+// ============================================
+// DOM ELEMENTS
+// ============================================
 const qText = document.getElementById("questionText");
 const optionsBox = document.getElementById("optionsContainer");
 const explanationBox = document.getElementById("explanationBox");
@@ -51,10 +49,57 @@ function shuffleOptions(options, correctIndex) {
 }
 
 // ============================================
-// RENDER
+// LOAD QUESTIONS (SYNC + ASYNC)
+// ============================================
+async function loadQuestions() {
+
+  // ---------- STATIC TOPICS ----------
+  if (selectedTopic === "html") {
+    allQuestions = htmlQuestions;
+  } else if (selectedTopic === "css") {
+    allQuestions = cssQuestions;
+  } else if (selectedTopic === "bootstrap") {
+    allQuestions = bootstrapQuestions;
+  }
+
+  // ---------- JAVASCRIPT (FETCH) ----------
+  else if (selectedTopic === "javascript") {
+    try {
+      const res = await fetch("js/data/js.data.json");
+      allQuestions = await res.json();
+    } catch (err) {
+      alert("Failed to load JavaScript questions");
+      console.error(err);
+      return;
+    }
+  }
+
+  // ---------- FILTER BY LEVEL ----------
+  const filteredQuestions = allQuestions.filter(
+    q => q.level === selectedLevel
+  );
+
+  // ---------- SAFETY CHECK ----------
+  if (!filteredQuestions.length) {
+    alert("No questions found for this level.");
+    window.location.href = "level.html";
+    return;
+  }
+
+  // ---------- SHUFFLE + LIMIT ----------
+  questions = filteredQuestions
+    .sort(() => Math.random() - 0.5)
+    .slice(0, QUESTIONS_PER_QUIZ);
+
+  render();
+}
+
+// ============================================
+// RENDER QUESTION
 // ============================================
 function render() {
   const rawQ = questions[index];
+  if (!rawQ) return;
 
   const shuffled = shuffleOptions(
     rawQ.options,
@@ -73,6 +118,7 @@ function render() {
 
   optionsBox.innerHTML = "";
   explanationBox.classList.add("d-none");
+  explanationBox.textContent = "";
   nextBtn.disabled = true;
 
   q.options.forEach((opt, i) => {
@@ -117,6 +163,7 @@ nextBtn.onclick = () => {
     localStorage.setItem(
       "result",
       JSON.stringify({
+        topic: selectedTopic,
         level: selectedLevel,
         correct,
         wrong,
@@ -131,11 +178,12 @@ nextBtn.onclick = () => {
 };
 
 backBtn.onclick = () => {
+  if (index === 0) return;
   index--;
   render();
 };
 
 // ============================================
-// START
+// START QUIZ
 // ============================================
-render();
+loadQuestions();
