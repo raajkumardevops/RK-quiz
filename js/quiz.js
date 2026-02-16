@@ -49,21 +49,18 @@ function shuffleOptions(options, correctIndex) {
 }
 
 // ============================================
-// LOAD QUESTIONS (SYNC + ASYNC)
+// LOAD QUESTIONS (NON-REPEATING ENGINE)
 // ============================================
 async function loadQuestions() {
 
-  // ---------- STATIC TOPICS ----------
+  // ---------- LOAD SOURCE ----------
   if (selectedTopic === "html") {
     allQuestions = htmlQuestions;
   } else if (selectedTopic === "css") {
     allQuestions = cssQuestions;
   } else if (selectedTopic === "bootstrap") {
     allQuestions = bootstrapQuestions;
-  }
-
-  // ---------- JAVASCRIPT (FETCH) ----------
-  else if (selectedTopic === "javascript") {
+  } else if (selectedTopic === "javascript") {
     try {
       const res = await fetch("js/data/js.data.json");
       allQuestions = await res.json();
@@ -75,21 +72,43 @@ async function loadQuestions() {
   }
 
   // ---------- FILTER BY LEVEL ----------
-  const filteredQuestions = allQuestions.filter(
+  const levelQuestions = allQuestions.filter(
     q => q.level === selectedLevel
   );
 
-  // ---------- SAFETY CHECK ----------
-  if (!filteredQuestions.length) {
+  if (!levelQuestions.length) {
     alert("No questions found for this level.");
     window.location.href = "level.html";
     return;
   }
 
-  // ---------- SHUFFLE + LIMIT ----------
-  questions = filteredQuestions
+  // ---------- USED QUESTIONS TRACKING ----------
+  const storageKey = `used_${selectedTopic}_${selectedLevel}`;
+  let usedIds = JSON.parse(localStorage.getItem(storageKey)) || [];
+
+  // Remaining unused questions
+  let remaining = levelQuestions.filter(
+    q => !usedIds.includes(q.id)
+  );
+
+  // ---------- RESET IF EXHAUSTED ----------
+  if (remaining.length < QUESTIONS_PER_QUIZ) {
+    usedIds = [];
+    localStorage.setItem(storageKey, JSON.stringify([]));
+    remaining = [...levelQuestions];
+  }
+
+  // ---------- PICK RANDOM 10 ----------
+  questions = remaining
     .sort(() => Math.random() - 0.5)
     .slice(0, QUESTIONS_PER_QUIZ);
+
+  // Save newly selected IDs
+  const newIds = questions.map(q => q.id);
+  localStorage.setItem(
+    storageKey,
+    JSON.stringify([...usedIds, ...newIds])
+  );
 
   render();
 }

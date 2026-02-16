@@ -1,217 +1,2456 @@
 [
+{
+"id": 1,
+"level": "easy",
+"question": "What is JavaScript?",
+"options": ["A programming language", "A database", "A browser", "An OS"],
+"correctIndex": 0,
+"explanation": "JavaScript is a programming language used to create dynamic web pages."
+},
+{
+"id": 2,
+"level": "easy",
+"question": "Which keyword declares a variable?",
+"options": ["var", "let", "const", "All of the above"],
+"correctIndex": 3,
+"explanation": "var, let and const can all declare variables."
+},
+{
+"id": 3,
+"level": "easy",
+"question": "Which symbol is used for single-line comments?",
+"options": ["//", "/* */", "#", "<!-- -->"],
+"correctIndex": 0,
+"explanation": "// is used for single-line comments."
+},
+{
+"id": 4,
+"level": "easy",
+"question": "Which function prints output to console?",
+"options": ["console.log()", "print()", "log()", "output()"],
+"correctIndex": 0,
+"explanation": "console.log() prints output to the browser console."
+},
+{
+"id": 5,
+"level": "easy",
+"question": "Which data type stores true or false?",
+"options": ["Boolean", "String", "Number", "Object"],
+"correctIndex": 0,
+"explanation": "Boolean stores true or false."
+},
+{
+"id": 6,
+"level": "easy",
+"question": "Which operator is used for addition?",
+"options": ["+", "-", "*", "/"],
+"correctIndex": 0,
+"explanation": "+ is the addition operator."
+},
+{
+"id": 7,
+"level": "easy",
+"question": "Which keyword defines a constant?",
+"options": ["const", "let", "var", "static"],
+"correctIndex": 0,
+"explanation": "const defines a constant variable."
+},
+{
+"id": 8,
+"level": "easy",
+"question": "Which method converts string to number?",
+"options": ["Number()", "String()", "parseString()", "toString()"],
+"correctIndex": 0,
+"explanation": "Number() converts string to number."
+},
+{
+"id": 9,
+"level": "easy",
+"question": "Which value represents no value?",
+"options": ["null", "false", "0" , "undefine"],
+"correctIndex": 0,
+"explanation": "null represents no value."
+},
+{
+"id": 10,
+"level": "easy",
+"question": "Which loop runs at least once?",
+"options": ["do...while", "for", "while", "foreach"],
+"correctIndex": 0,
+"explanation": "do...while runs at least once."
+},
 
-  {
-    "level": "easy",
-    "question": "What is JavaScript?",
-    "options": ["A programming language", "A database", "A browser", "An OS"],
-    "correctIndex": 0,
-    "explanation": "JavaScript is a programming language used to create dynamic web pages."
-  },
-  {
-    "level": "easy",
-    "question": "Which keyword declares a variable?",
-    "options": ["var", "let", "const", "All of the above"],
-    "correctIndex": 3,
-    "explanation": "var, let and const can all declare variables."
-  },
-  {
-    "level": "easy",
-    "question": "Which symbol is used for single-line comments?",
-    "options": ["//", "/* */", "#", "<!-- -->"],
-    "correctIndex": 0,
-    "explanation": "// is used for single-line comments."
-  },
-  {
-    "level": "easy",
-    "question": "Which function prints output to console?",
-    "options": ["console.log()", "print()", "log()", "output()"],
-    "correctIndex": 0,
-    "explanation": "console.log() prints output to the browser console."
-  },
-  {
-    "level": "easy",
-    "question": "Which data type stores true or false?",
-    "options": ["Boolean", "String", "Number", "Object"],
-    "correctIndex": 0,
-    "explanation": "Boolean stores true or false."
-  },
-  {
-    "level": "easy",
-    "question": "Which operator is used for addition?",
-    "options": ["+", "-", "*", "/"],
-    "correctIndex": 0,
-    "explanation": "+ is the addition operator."
-  },
-  {
-    "level": "easy",
-    "question": "Which keyword defines a constant?",
-    "options": ["const", "let", "var", "static"],
-    "correctIndex": 0,
-    "explanation": "const defines a constant variable."
-  },
-  {
-    "level": "easy",
-    "question": "Which method converts string to number?",
-    "options": ["Number()", "String()", "parseString()", "toString()"],
-    "correctIndex": 0,
-    "explanation": "Number() converts string to number."
-  },
-  {
-    "level": "easy",
-    "question": "Which value represents no value?",
-    "options": ["null", "false", "0", "\"\""],
-    "correctIndex": 0,
-    "explanation": "null represents no value."
-  },
-  {
-    "level": "easy",
-    "question": "Which loop runs at least once?",
-    "options": ["do...while", "for", "while", "foreach"],
-    "correctIndex": 0,
-    "explanation": "do...while runs at least once."
-  },
+{
+"id": 11,
+"level": "medium",
+"question": "Which method converts JSON to object?",
+"options": ["JSON.parse()", "JSON.stringify()", "parseJSON()", "toObject()"],
+"correctIndex": 0,
+"explanation": "JSON.parse() converts JSON string to object."
+},
+{
+"id": 12,
+"level": "medium",
+"question": "What is a closure?",
+"options": ["Function with preserved scope", "Loop", "Callback", "Promise"],
+"correctIndex": 0,
+"explanation": "Closure allows a function to remember its scope."
+},
+{
+"id": 13,
+"level": "medium",
+"question": "Which keyword is used for async function?",
+"options": ["async", "await", "promise", "defer"],
+"correctIndex": 0,
+"explanation": "async keyword defines async function."
+},
+{
+"id": 14,
+"level": "medium",
+"question": "Which method adds element to end of array?",
+"options": ["push()", "pop()", "shift()", "unshift()"],
+"correctIndex": 0,
+"explanation": "push() adds element to end."
+},
+{
+"id": 15,
+"level": "medium",
+"question": "Which operator checks value and type?",
+"options": ["===", "==", "=", "!="],
+"correctIndex": 0,
+"explanation": "=== checks value and type."
+},
 
- 
-  {
-    "level": "medium",
-    "question": "Which method converts JSON to object?",
-    "options": ["JSON.parse()", "JSON.stringify()", "parseJSON()", "toObject()"],
-    "correctIndex": 0,
-    "explanation": "JSON.parse() converts JSON string to object."
-  },
-  {
-    "level": "medium",
-    "question": "What is a closure?",
-    "options": ["Function with preserved scope", "Loop", "Callback", "Promise"],
-    "correctIndex": 0,
-    "explanation": "Closure allows a function to remember its scope."
-  },
-  {
-    "level": "medium",
-    "question": "Which keyword is used for async function?",
-    "options": ["async", "await", "promise", "defer"],
-    "correctIndex": 0,
-    "explanation": "async keyword defines async function."
-  },
-  {
-    "level": "medium",
-    "question": "Which method adds element to end of array?",
-    "options": ["push()", "pop()", "shift()", "unshift()"],
-    "correctIndex": 0,
-    "explanation": "push() adds element to end."
-  },
-  {
-    "level": "medium",
-    "question": "Which method removes last array element?",
-    "options": ["pop()", "push()", "shift()", "slice()"],
-    "correctIndex": 0,
-    "explanation": "pop() removes last element."
-  },
-  {
-    "level": "medium",
-    "question": "Which operator checks value and type?",
-    "options": ["===", "==", "=", "!="],
-    "correctIndex": 0,
-    "explanation": "=== checks value and type."
-  },
-  {
-    "level": "medium",
-    "question": "Which function delays execution?",
-    "options": ["setTimeout()", "setInterval()", "delay()", "timeout()"],
-    "correctIndex": 0,
-    "explanation": "setTimeout delays execution."
-  },
-  {
-    "level": "medium",
-    "question": "Which array method creates new array?",
-    "options": ["map()", "forEach()", "push()", "pop()"],
-    "correctIndex": 0,
-    "explanation": "map() returns new array."
-  },
-  {
-    "level": "medium",
-    "question": "Which keyword stops loop?",
-    "options": ["break", "stop", "exit", "return"],
-    "correctIndex": 0,
-    "explanation": "break stops loop."
-  },
-  {
-    "level": "medium",
-    "question": "Which scope is default in JS?",
-    "options": ["Global", "Block", "Function", "Local"],
-    "correctIndex": 0,
-    "explanation": "Global scope is default."
-  },
+{
+"id": 16,
+"level": "hard",
+"question": "What does the event loop handle?",
+"options": ["Asynchronous operations", "HTML rendering", "CSS parsing", "Thread creation"],
+"correctIndex": 0,
+"explanation": "The event loop manages asynchronous callbacks."
+},
+{
+"id": 17,
+"level": "hard",
+"question": "What is hoisting?",
+"options": ["Moving declarations to the top", "Executing functions", "Handling async code", "Garbage collection"],
+"correctIndex": 0,
+"explanation": "Hoisting moves variable and function declarations to the top."
+},
+{
+"id": 18,
+"level": "hard",
+"question": "Which operator spreads array values?",
+"options": ["...", "=>", "??", "::"],
+"correctIndex": 0,
+"explanation": "The spread operator expands iterable values."
+},
+{
+"id": 19,
+"level": "hard",
+"question": "What is the temporal dead zone?",
+"options": ["Accessing let before declaration", "Memory leak", "Scope pollution", "Async error"],
+"correctIndex": 0,
+"explanation": "TDZ occurs when accessing let or const before initialization."
+},
+{
+"id": 20,
+"level": "hard",
+"question": "Which statement handles runtime errors?",
+"options": ["try...catch", "if...else", "switch", "throw"],
+"correctIndex": 0,
+"explanation": "try...catch is used for error handling."
+},
 
-  
-  {
-    "level": "hard",
-    "question": "What does event loop handle?",
-    "options": ["Async operations", "HTML parsing", "CSS rendering", "Thread creation"],
-    "correctIndex": 0,
-    "explanation": "Event loop handles async callbacks."
-  },
-  {
-    "level": "hard",
-    "question": "Which is NOT a primitive type?",
-    "options": ["Object", "String", "Number", "Boolean"],
-    "correctIndex": 0,
-    "explanation": "Object is non-primitive."
-  },
-  {
-    "level": "hard",
-    "question": "What is hoisting?",
-    "options": ["Variable moved to top", "Function execution", "Async handling", "Memory leak"],
-    "correctIndex": 0,
-    "explanation": "Hoisting moves declarations to top."
-  },
-  {
-    "level": "hard",
-    "question": "Which method deep copies object?",
-    "options": ["structuredClone()", "Object.assign()", "spread operator", "copy()"],
-    "correctIndex": 0,
-    "explanation": "structuredClone performs deep copy."
-  },
-  {
-    "level": "hard",
-    "question": "Which keyword creates promise?",
-    "options": ["new Promise()", "async", "await", "then"],
-    "correctIndex": 0,
-    "explanation": "Promise is created using new Promise()."
-  },
-  {
-    "level": "hard",
-    "question": "Which array method flattens array?",
-    "options": ["flat()", "map()", "reduce()", "concat()"],
-    "correctIndex": 0,
-    "explanation": "flat() flattens arrays."
-  },
-  {
-    "level": "hard",
-    "question": "Which operator spreads array?",
-    "options": ["...", "=>", "??", "::"],
-    "correctIndex": 0,
-    "explanation": "Spread operator expands arrays."
-  },
-  {
-    "level": "hard",
-    "question": "What is temporal dead zone?",
-    "options": ["Accessing let before declaration", "Memory leak", "Scope error", "Async issue"],
-    "correctIndex": 0,
-    "explanation": "TDZ occurs when accessing let before declaration."
-  },
-  {
-    "level": "hard",
-    "question": "Which method handles fulfilled promise?",
-    "options": ["then()", "catch()", "finally()", "resolve()"],
-    "correctIndex": 0,
-    "explanation": "then() handles fulfilled promise."
-  },
-  {
-    "level": "hard",
-    "question": "Which statement handles errors?",
-    "options": ["try...catch", "if...else", "switch", "throw"],
-    "correctIndex": 0,
-    "explanation": "try...catch handles runtime errors."
-  }
+{
+"id": 21,
+"level": "easy",
+"question": "Which keyword defines a function?",
+"options": ["function", "method", "def", "fn"],
+"correctIndex": 0,
+"explanation": "The function keyword is used to declare functions."
+},
+{
+"id": 22,
+"level": "easy",
+"question": "Which method joins array elements?",
+"options": ["join()", "merge()", "combine()", "concat()"],
+"correctIndex": 0,
+"explanation": "join() combines array elements into a string."
+},
+{
+"id": 23,
+"level": "easy",
+"question": "Which keyword exits a function?",
+"options": ["return", "break", "stop", "exit"],
+"correctIndex": 0,
+"explanation": "return exits a function and sends back a value."
+},
+{
+"id": 24,
+"level": "easy",
+"question": "Which value means undefined?",
+"options": ["undefined", "null", "false", "NaN"],
+"correctIndex": 0,
+"explanation": "undefined means a variable has no assigned value."
+},
+{
+"id": 25,
+"level": "easy",
+"question": "Which method checks array length?",
+"options": ["length", "size()", "count()", "total()"],
+"correctIndex": 0,
+"explanation": "length returns the number of elements in an array."
+},
+
+{
+"id": 26,
+"level": "medium",
+"question": "Which method filters array elements?",
+"options": ["filter()", "map()", "reduce()", "forEach()"],
+"correctIndex": 0,
+"explanation": "filter() returns elements that match a condition."
+},
+{
+"id": 27,
+"level": "medium",
+"question": "Which method reduces array to single value?",
+"options": ["reduce()", "map()", "filter()", "join()"],
+"correctIndex": 0,
+"explanation": "reduce() combines array values into one."
+},
+{
+"id": 28,
+"level": "medium",
+"question": "Which keyword creates a class?",
+"options": ["class", "object", "prototype", "struct"],
+"correctIndex": 0,
+"explanation": "class keyword defines a class in JavaScript."
+},
+{
+"id": 29,
+"level": "medium",
+"question": "Which keyword accesses parent class?",
+"options": ["super", "this", "parent", "base"],
+"correctIndex": 0,
+"explanation": "super refers to the parent class."
+},
+{
+"id": 30,
+"level": "medium",
+"question": "Which method repeats code at intervals?",
+"options": ["setInterval()", "setTimeout()", "loop()", "repeat()"],
+"correctIndex": 0,
+"explanation": "setInterval executes code repeatedly."
+},
+
+{
+"id": 31,
+"level": "hard",
+"question": "Which promise method runs regardless of result?",
+"options": ["finally()", "then()", "catch()", "resolve()"],
+"correctIndex": 0,
+"explanation": "finally() runs after promise completion."
+},
+{
+"id": 32,
+"level": "hard",
+"question": "Which API stores data in browser?",
+"options": ["localStorage", "cookie", "session", "cache"],
+"correctIndex": 0,
+"explanation": "localStorage stores data persistently in browser."
+},
+{
+"id": 33,
+"level": "hard",
+"question": "Which method converts object to JSON?",
+"options": ["JSON.stringify()", "JSON.parse()", "toJSON()", "convert()"],
+"correctIndex": 0,
+"explanation": "JSON.stringify converts object to JSON string."
+},
+{
+"id": 34,
+"level": "hard",
+"question": "Which keyword pauses async execution?",
+"options": ["await", "pause", "wait", "stop"],
+"correctIndex": 0,
+"explanation": "await pauses execution until promise resolves."
+},
+{
+"id": 35,
+"level": "hard",
+"question": "Which structure handles multiple conditions?",
+"options": ["switch", "if", "loop", "try"],
+"correctIndex": 0,
+"explanation": "switch handles multiple conditional cases."
+},
+{
+"id": 36,
+"level": "easy",
+"question": "Which operator is used to compare values only?",
+"options": ["==", "===", "!=", "="],
+"correctIndex": 0,
+"explanation": "== compares only values, not data types."
+},
+{
+"id": 37,
+"level": "easy",
+"question": "Which keyword creates an object?",
+"options": ["new", "create", "object", "this"],
+"correctIndex": 0,
+"explanation": "new is used to create objects from constructors."
+},
+{
+"id": 38,
+"level": "easy",
+"question": "Which method removes first array element?",
+"options": ["shift()", "pop()", "slice()", "splice()"],
+"correctIndex": 0,
+"explanation": "shift() removes the first element of an array."
+},
+{
+"id": 39,
+"level": "easy",
+"question": "Which method adds element at start of array?",
+"options": ["unshift()", "push()", "insert()", "add()"],
+"correctIndex": 0,
+"explanation": "unshift() adds elements to the beginning of an array."
+},
+{
+"id": 40,
+"level": "easy",
+"question": "Which value represents Not a Number?",
+"options": ["NaN", "null", "undefined", "false"],
+"correctIndex": 0,
+"explanation": "NaN represents an invalid number."
+},
+
+{
+"id": 41,
+"level": "medium",
+"question": "Which method checks if array includes a value?",
+"options": ["includes()", "contains()", "has()", "exists()"],
+"correctIndex": 0,
+"explanation": "includes() checks for the presence of a value."
+},
+{
+"id": 42,
+"level": "medium",
+"question": "Which operator provides default value?",
+"options": ["||", "&&", "??", "?: "],
+"correctIndex": 2,
+"explanation": "Nullish coalescing (??) provides default for null or undefined."
+},
+{
+"id": 43,
+"level": "medium",
+"question": "Which keyword refers to current object?",
+"options": ["this", "self", "object", "current"],
+"correctIndex": 0,
+"explanation": "this refers to the current object context."
+},
+{
+"id": 44,
+"level": "medium",
+"question": "Which method converts array to string?",
+"options": ["toString()", "stringify()", "convert()", "joinAll()"],
+"correctIndex": 0,
+"explanation": "toString() converts array to comma-separated string."
+},
+{
+"id": 45,
+"level": "medium",
+"question": "Which keyword skips loop iteration?",
+"options": ["continue", "break", "skip", "pass"],
+"correctIndex": 0,
+"explanation": "continue skips the current iteration."
+},
+
+{
+"id": 46,
+"level": "hard",
+"question": "Which function binds context permanently?",
+"options": ["bind()", "call()", "apply()", "attach()"],
+"correctIndex": 0,
+"explanation": "bind() returns a function with fixed this value."
+},
+{
+"id": 47,
+"level": "hard",
+"question": "Which method invokes function with arguments array?",
+"options": ["apply()", "call()", "bind()", "run()"],
+"correctIndex": 0,
+"explanation": "apply() accepts arguments as an array."
+},
+{
+"id": 48,
+"level": "hard",
+"question": "Which feature allows functions as arguments?",
+"options": ["First-class functions", "Closures", "Callbacks", "Hoisting"],
+"correctIndex": 0,
+"explanation": "First-class functions can be passed as arguments."
+},
+{
+"id": 49,
+"level": "hard",
+"question": "Which structure stores key-value pairs?",
+"options": ["Map", "Set", "Array", "WeakSet"],
+"correctIndex": 0,
+"explanation": "Map stores key-value pairs."
+},
+{
+"id": 50,
+"level": "hard",
+"question": "Which structure stores unique values?",
+"options": ["Set", "Array", "Map", "Object"],
+"correctIndex": 0,
+"explanation": "Set stores only unique values."
+},
+
+{
+"id": 51,
+"level": "easy",
+"question": "Which keyword defines block scope variable?",
+"options": ["let", "var", "static", "define"],
+"correctIndex": 0,
+"explanation": "let defines block-scoped variables."
+},
+{
+"id": 52,
+"level": "easy",
+"question": "Which symbol represents logical AND?",
+"options": ["&&", "||", "&", "|"],
+"correctIndex": 0,
+"explanation": "&& is the logical AND operator."
+},
+{
+"id": 53,
+"level": "easy",
+"question": "Which keyword creates arrow function?",
+"options": ["=>", "function", "arrow", "fn"],
+"correctIndex": 0,
+"explanation": "=> is used in arrow functions."
+},
+{
+"id": 54,
+"level": "easy",
+"question": "Which method checks type of variable?",
+"options": ["typeof", "type()", "check()", "instance()"],
+"correctIndex": 0,
+"explanation": "typeof returns the type of a variable."
+},
+{
+"id": 55,
+"level": "easy",
+"question": "Which value means empty string?",
+"options": ["", "null", "undefined", "0"],
+"correctIndex": 0,
+"explanation": "Empty string contains no characters."
+},
+
+{
+"id": 56,
+"level": "medium",
+"question": "Which method merges arrays?",
+"options": ["concat()", "merge()", "join()", "pushAll()"],
+"correctIndex": 0,
+"explanation": "concat() merges arrays."
+},
+{
+"id": 57,
+"level": "medium",
+"question": "Which keyword throws error manually?",
+"options": ["throw", "error", "catch", "stop"],
+"correctIndex": 0,
+"explanation": "throw is used to generate custom errors."
+},
+{
+"id": 58,
+"level": "medium",
+"question": "Which API fetches HTTP data?",
+"options": ["fetch()", "ajax()", "http()", "request()"],
+"correctIndex": 0,
+"explanation": "fetch() is used for HTTP requests."
+},
+{
+"id": 59,
+"level": "medium",
+"question": "Which object handles dates?",
+"options": ["Date", "Time", "Moment", "Clock"],
+"correctIndex": 0,
+"explanation": "Date object handles date and time."
+},
+{
+"id": 60,
+"level": "medium",
+"question": "Which operator checks property existence?",
+"options": ["in", "has", "exists", "of"],
+"correctIndex": 0,
+"explanation": "in checks if property exists in object."
+},
+
+{
+"id": 61,
+"level": "hard",
+"question": "Which storage clears on tab close?",
+"options": ["sessionStorage", "localStorage", "cookie", "cache"],
+"correctIndex": 0,
+"explanation": "sessionStorage clears when tab closes."
+},
+{
+"id": 62,
+"level": "hard",
+"question": "Which object is immutable?",
+"options": ["Primitive", "Array", "Object", "Function"],
+"correctIndex": 0,
+"explanation": "Primitive values are immutable."
+},
+{
+"id": 63,
+"level": "hard",
+"question": "Which pattern handles async chaining?",
+"options": ["Promises", "Callbacks", "Loops", "Events"],
+"correctIndex": 0,
+"explanation": "Promises handle async chaining cleanly."
+},
+{
+"id": 64,
+"level": "hard",
+"question": "Which keyword creates generator?",
+"options": ["function*", "generator", "yield*", "gen"],
+"correctIndex": 0,
+"explanation": "function* defines a generator."
+},
+{
+"id": 65,
+"level": "hard",
+"question": "Which keyword pauses generator?",
+"options": ["yield", "await", "pause", "stop"],
+"correctIndex": 0,
+"explanation": "yield pauses generator execution."
+},
+{
+"id": 66,
+"level": "easy",
+"question": "Which built-in method rounds a number down?",
+"options": ["Math.floor()", "Math.round()", "Math.ceil()", "Math.trunc()"],
+"correctIndex": 0,
+"explanation": "Math.floor() rounds a number down to the nearest integer."
+},
+{
+"id": 67,
+"level": "easy",
+"question": "Which built-in method rounds a number up?",
+"options": ["Math.ceil()", "Math.round()", "Math.floor()", "Math.up()"],
+"correctIndex": 0,
+"explanation": "Math.ceil() rounds a number up to the nearest integer."
+},
+{
+"id": 68,
+"level": "easy",
+"question": "Which method converts number to string?",
+"options": ["toString()", "String()", "Number()", "parseInt()"],
+"correctIndex": 0,
+"explanation": "toString() converts a number to a string."
+},
+{
+"id": 69,
+"level": "easy",
+"question": "Which operator checks inequality?",
+"options": ["!=", "==", "=", "<="],
+"correctIndex": 0,
+"explanation": "!= checks if two values are not equal."
+},
+{
+"id": 70,
+"level": "easy",
+"question": "Which keyword defines a block of code for errors?",
+"options": ["try", "catch", "throw", "error"],
+"correctIndex": 0,
+"explanation": "try defines a block where errors may occur."
+},
+
+{
+"id": 71,
+"level": "medium",
+"question": "Which array method removes elements by index?",
+"options": ["splice()", "slice()", "pop()", "shift()"],
+"correctIndex": 0,
+"explanation": "splice() removes or replaces elements by index."
+},
+{
+"id": 72,
+"level": "medium",
+"question": "Which array method copies part of an array?",
+"options": ["slice()", "splice()", "map()", "filter()"],
+"correctIndex": 0,
+"explanation": "slice() returns a shallow copy of part of an array."
+},
+{
+"id": 73,
+"level": "medium",
+"question": "Which operator combines conditions?",
+"options": ["&&", "||", "??", "!"],
+"correctIndex": 0,
+"explanation": "&& combines multiple conditions that must all be true."
+},
+{
+"id": 74,
+"level": "medium",
+"question": "Which keyword defines default function parameters?",
+"options": ["=", "default", "param", ":"],
+"correctIndex": 0,
+"explanation": "Default parameters are defined using the = operator."
+},
+{
+"id": 75,
+"level": "medium",
+"question": "Which object represents mathematical operations?",
+"options": ["Math", "Number", "Calc", "Operator"],
+"correctIndex": 0,
+"explanation": "Math provides mathematical constants and functions."
+},
+
+{
+"id": 76,
+"level": "medium",
+"question": "Which method converts string to integer?",
+"options": ["parseInt()", "Number()", "parseFloat()", "toFixed()"],
+"correctIndex": 0,
+"explanation": "parseInt() converts a string to an integer."
+},
+{
+"id": 77,
+"level": "medium",
+"question": "Which method converts string to floating number?",
+"options": ["parseFloat()", "parseInt()", "Number()", "float()"],
+"correctIndex": 0,
+"explanation": "parseFloat() converts a string to a decimal number."
+},
+{
+"id": 78,
+"level": "medium",
+"question": "Which operator checks both value and type inequality?",
+"options": ["!==", "!=", "==", "<>"],
+"correctIndex": 0,
+"explanation": "!== checks both value and type for inequality."
+},
+{
+"id": 79,
+"level": "medium",
+"question": "Which keyword defines inheritance in classes?",
+"options": ["extends", "inherits", "super", "prototype"],
+"correctIndex": 0,
+"explanation": "extends allows one class to inherit another."
+},
+{
+"id": 80,
+"level": "medium",
+"question": "Which method stops event bubbling?",
+"options": ["stopPropagation()", "preventDefault()", "stop()", "cancel()"],
+"correctIndex": 0,
+"explanation": "stopPropagation() stops event bubbling."
+},
+
+{
+"id": 81,
+"level": "hard",
+"question": "Which method prevents default browser behavior?",
+"options": ["preventDefault()", "stopPropagation()", "block()", "cancel()"],
+"correctIndex": 0,
+"explanation": "preventDefault() stops default browser actions."
+},
+{
+"id": 82,
+"level": "hard",
+"question": "Which object represents the browser window?",
+"options": ["window", "document", "screen", "navigator"],
+"correctIndex": 0,
+"explanation": "window represents the browser window."
+},
+{
+"id": 83,
+"level": "hard",
+"question": "Which object represents the HTML document?",
+"options": ["document", "window", "html", "dom"],
+"correctIndex": 0,
+"explanation": "document represents the loaded HTML document."
+},
+{
+"id": 84,
+"level": "hard",
+"question": "Which API observes DOM changes?",
+"options": ["MutationObserver", "IntersectionObserver", "ResizeObserver", "EventObserver"],
+"correctIndex": 0,
+"explanation": "MutationObserver watches for DOM changes."
+},
+{
+"id": 85,
+"level": "hard",
+"question": "Which API observes element visibility?",
+"options": ["IntersectionObserver", "MutationObserver", "ResizeObserver", "VisibilityAPI"],
+"correctIndex": 0,
+"explanation": "IntersectionObserver tracks element visibility."
+},
+
+{
+"id": 86,
+"level": "easy",
+"question": "Which method selects element by ID?",
+"options": ["getElementById()", "querySelectorAll()", "getElementsByClassName()", "selectId()"],
+"correctIndex": 0,
+"explanation": "getElementById() selects an element by its ID."
+},
+{
+"id": 87,
+"level": "easy",
+"question": "Which method selects first matching CSS selector?",
+"options": ["querySelector()", "querySelectorAll()", "select()", "getElement()"],
+"correctIndex": 0,
+"explanation": "querySelector() returns the first matching element."
+},
+{
+"id": 88,
+"level": "easy",
+"question": "Which event fires on button click?",
+"options": ["click", "hover", "press", "tap"],
+"correctIndex": 0,
+"explanation": "click fires when a button is clicked."
+},
+{
+"id": 89,
+"level": "easy",
+"question": "Which attribute stores custom data?",
+"options": ["data-*", "custom-*", "attr-*", "info-*"],
+"correctIndex": 0,
+"explanation": "data-* attributes store custom data."
+},
+{
+"id": 90,
+"level": "easy",
+"question": "Which keyword checks a condition?",
+"options": ["if", "check", "when", "case"],
+"correctIndex": 0,
+"explanation": "if is used for conditional logic."
+},
+
+{
+"id": 91,
+"level": "medium",
+"question": "Which method converts NodeList to array?",
+"options": ["Array.from()", "toArray()", "spread()", "convert()"],
+"correctIndex": 0,
+"explanation": "Array.from() converts NodeList to array."
+},
+{
+"id": 92,
+"level": "medium",
+"question": "Which operator copies object properties?",
+"options": ["...", "=", "::", "=>"],
+"correctIndex": 0,
+"explanation": "Spread operator copies object properties."
+},
+{
+"id": 93,
+"level": "medium",
+"question": "Which method schedules microtasks?",
+"options": ["Promise.then()", "setTimeout()", "setInterval()", "queueMicrotask()"],
+"correctIndex": 0,
+"explanation": "Promise.then() schedules microtasks."
+},
+{
+"id": 94,
+"level": "medium",
+"question": "Which method repeats async calls sequentially?",
+"options": ["async/await", "Promise.all()", "setInterval()", "loop"],
+"correctIndex": 0,
+"explanation": "async/await enables sequential async execution."
+},
+{
+"id": 95,
+"level": "medium",
+"question": "Which keyword defines private class fields?",
+"options": ["#", "private", "_", "this"],
+"correctIndex": 0,
+"explanation": "# defines private class fields."
+},
+
+{
+"id": 96,
+"level": "hard",
+"question": "Which API runs code in background thread?",
+"options": ["Web Workers", "Service Workers", "Threads", "BackgroundAPI"],
+"correctIndex": 0,
+"explanation": "Web Workers run scripts in background threads."
+},
+{
+"id": 97,
+"level": "hard",
+"question": "Which API intercepts network requests?",
+"options": ["Service Workers", "Web Workers", "Fetch API", "XHR"],
+"correctIndex": 0,
+"explanation": "Service Workers can intercept network requests."
+},
+{
+"id": 98,
+"level": "hard",
+"question": "Which feature enables offline apps?",
+"options": ["Service Workers", "localStorage", "cookies", "cache-control"],
+"correctIndex": 0,
+"explanation": "Service Workers enable offline capabilities."
+},
+{
+"id": 99,
+"level": "hard",
+"question": "Which API caches network responses?",
+"options": ["Cache API", "Storage API", "Fetch API", "Network API"],
+"correctIndex": 0,
+"explanation": "Cache API stores network responses."
+},
+{
+"id": 100,
+"level": "hard",
+"question": "Which API handles clipboard access?",
+"options": ["Clipboard API", "Copy API", "Paste API", "Text API"],
+"correctIndex": 0,
+"explanation": "Clipboard API provides clipboard access."
+},
+
+{
+"id": 101,
+"level": "easy",
+"question": "Which keyword defines an array?",
+"options": ["[]", "{}", "array()", "new Array()"],
+"correctIndex": 0,
+"explanation": "[] is used to define arrays."
+},
+{
+"id": 102,
+"level": "easy",
+"question": "Which method adds event listener?",
+"options": ["addEventListener()", "on()", "listen()", "attach()"],
+"correctIndex": 0,
+"explanation": "addEventListener() attaches events."
+},
+{
+"id": 103,
+"level": "easy",
+"question": "Which event fires when page loads?",
+"options": ["load", "ready", "DOMContentLoaded", "init"],
+"correctIndex": 0,
+"explanation": "load fires when page is fully loaded."
+},
+{
+"id": 104,
+"level": "easy",
+"question": "Which operator negates boolean?",
+"options": ["!", "&&", "||", "~"],
+"correctIndex": 0,
+"explanation": "! negates a boolean value."
+},
+{
+"id": 105,
+"level": "easy",
+"question": "Which value represents infinity?",
+"options": ["Infinity", "NaN", "undefined", "null"],
+"correctIndex": 0,
+"explanation": "Infinity represents an infinite numeric value."
+},
+
+{
+"id": 106,
+"level": "medium",
+"question": "Which API schedules animation frames?",
+"options": ["requestAnimationFrame()", "setTimeout()", "setInterval()", "animate()"],
+"correctIndex": 0,
+"explanation": "requestAnimationFrame() schedules animation frames."
+},
+{
+"id": 107,
+"level": "medium",
+"question": "Which object provides browser info?",
+"options": ["navigator", "window", "document", "screen"],
+"correctIndex": 0,
+"explanation": "navigator contains browser information."
+},
+{
+"id": 108,
+"level": "medium",
+"question": "Which method reloads page?",
+"options": ["location.reload()", "window.refresh()", "reload()", "refresh()"],
+"correctIndex": 0,
+"explanation": "location.reload() reloads the page."
+},
+{
+"id": 109,
+"level": "medium",
+"question": "Which method redirects page?",
+"options": ["location.href", "window.open()", "redirect()", "go()"],
+"correctIndex": 0,
+"explanation": "location.href changes page URL."
+},
+{
+"id": 110,
+"level": "medium",
+"question": "Which API measures performance?",
+"options": ["Performance API", "Timing API", "Speed API", "Measure API"],
+"correctIndex": 0,
+"explanation": "Performance API measures performance metrics."
+},
+
+{
+"id": 111,
+"level": "hard",
+"question": "Which API observes element resize?",
+"options": ["ResizeObserver", "MutationObserver", "IntersectionObserver", "SizeAPI"],
+"correctIndex": 0,
+"explanation": "ResizeObserver tracks size changes."
+},
+{
+"id": 112,
+"level": "hard",
+"question": "Which API handles drag and drop?",
+"options": ["Drag and Drop API", "Mouse API", "Pointer API", "Move API"],
+"correctIndex": 0,
+"explanation": "Drag and Drop API handles drag events."
+},
+{
+"id": 113,
+"level": "hard",
+"question": "Which API accesses battery status?",
+"options": ["Battery Status API", "Power API", "Energy API", "Device API"],
+"correctIndex": 0,
+"explanation": "Battery Status API provides battery info."
+},
+{
+"id": 114,
+"level": "hard",
+"question": "Which API handles geolocation?",
+"options": ["Geolocation API", "Location API", "Map API", "GPS API"],
+"correctIndex": 0,
+"explanation": "Geolocation API provides location data."
+},
+{
+"id": 115,
+"level": "hard",
+"question": "Which API enables push notifications?",
+"options": ["Push API", "Notification API", "Message API", "Alert API"],
+"correctIndex": 0,
+"explanation": "Push API enables push notifications."
+},
+
+{
+"id": 116,
+"level": "easy",
+"question": "Which keyword defines a promise?",
+"options": ["Promise", "async", "await", "then"],
+"correctIndex": 0,
+"explanation": "Promise constructor creates a promise."
+},
+{
+"id": 117,
+"level": "easy",
+"question": "Which method handles promise rejection?",
+"options": ["catch()", "then()", "finally()", "reject()"],
+"correctIndex": 0,
+"explanation": "catch() handles rejected promises."
+},
+{
+"id": 118,
+"level": "easy",
+"question": "Which keyword repeats code?",
+"options": ["for", "repeat", "loop", "iterate"],
+"correctIndex": 0,
+"explanation": "for loop repeats code."
+},
+{
+"id": 119,
+"level": "easy",
+"question": "Which operator increments value?",
+"options": ["++", "+=", "--", "*="],
+"correctIndex": 0,
+"explanation": "++ increments a value by one."
+},
+{
+"id": 120,
+"level": "easy",
+"question": "Which operator decrements value?",
+"options": ["--", "-=", "++", "/="],
+"correctIndex": 0,
+"explanation": "-- decrements a value by one."
+},
+
+{
+"id": 121,
+"level": "medium",
+"question": "Which API sends HTTP requests?",
+"options": ["Fetch API", "Storage API", "Cache API", "History API"],
+"correctIndex": 0,
+"explanation": "Fetch API sends network requests."
+},
+{
+"id": 122,
+"level": "medium",
+"question": "Which method combines multiple promises?",
+"options": ["Promise.all()", "Promise.race()", "Promise.any()", "Promise.resolve()"],
+"correctIndex": 0,
+"explanation": "Promise.all() resolves when all promises resolve."
+},
+{
+"id": 123,
+"level": "medium",
+"question": "Which method returns fastest promise?",
+"options": ["Promise.race()", "Promise.all()", "Promise.any()", "Promise.resolve()"],
+"correctIndex": 0,
+"explanation": "Promise.race() returns the fastest promise."
+},
+{
+"id": 124,
+"level": "medium",
+"question": "Which method returns first fulfilled promise?",
+"options": ["Promise.any()", "Promise.all()", "Promise.race()", "Promise.reject()"],
+"correctIndex": 0,
+"explanation": "Promise.any() resolves with the first fulfilled promise."
+},
+{
+"id": 125,
+"level": "medium",
+"question": "Which object represents browser history?",
+"options": ["history", "location", "navigator", "window"],
+"correctIndex": 0,
+"explanation": "history represents browser navigation history."
+},
+{
+"id": 126,
+"level": "easy",
+"question": "Which keyword defines a variable that can change value?",
+"options": ["let", "const", "final", "static"],
+"correctIndex": 0,
+"explanation": "let allows reassignment of values."
+},
+{
+"id": 127,
+"level": "easy",
+"question": "Which symbol is used for object literals?",
+"options": ["{}", "[]", "()", "<>"],
+"correctIndex": 0,
+"explanation": "Objects are defined using curly braces."
+},
+{
+"id": 128,
+"level": "easy",
+"question": "Which method converts value to boolean?",
+"options": ["Boolean()", "toBoolean()", "parseBool()", "bool()"],
+"correctIndex": 0,
+"explanation": "Boolean() converts a value to true or false."
+},
+{
+"id": 129,
+"level": "easy",
+"question": "Which operator checks logical OR?",
+"options": ["||", "&&", "|", "!"],
+"correctIndex": 0,
+"explanation": "|| returns true if any operand is true."
+},
+{
+"id": 130,
+"level": "easy",
+"question": "Which value represents false condition?",
+"options": ["false", "0", "null", "All of the above"],
+"correctIndex": 3,
+"explanation": "false, 0, and null are all falsy values."
+},
+
+{
+"id": 131,
+"level": "medium",
+"question": "Which array method checks every element condition?",
+"options": ["every()", "some()", "filter()", "map()"],
+"correctIndex": 0,
+"explanation": "every() checks condition on all elements."
+},
+{
+"id": 132,
+"level": "medium",
+"question": "Which array method checks at least one condition?",
+"options": ["some()", "every()", "map()", "reduce()"],
+"correctIndex": 0,
+"explanation": "some() returns true if any element matches."
+},
+{
+"id": 133,
+"level": "medium",
+"question": "Which keyword defines optional chaining?",
+"options": ["?.", "??", "::", "=>"],
+"correctIndex": 0,
+"explanation": "Optional chaining safely accesses nested properties."
+},
+{
+"id": 134,
+"level": "medium",
+"question": "Which operator assigns default value if null?",
+"options": ["??", "||", "&&", "?: "],
+"correctIndex": 0,
+"explanation": "Nullish coalescing handles null or undefined."
+},
+{
+"id": 135,
+"level": "medium",
+"question": "Which method freezes an object?",
+"options": ["Object.freeze()", "Object.lock()", "Object.seal()", "Object.block()"],
+"correctIndex": 0,
+"explanation": "Object.freeze() prevents modification."
+},
+
+{
+"id": 136,
+"level": "hard",
+"question": "Which method seals object but allows changes?",
+"options": ["Object.seal()", "Object.freeze()", "Object.lock()", "Object.close()"],
+"correctIndex": 0,
+"explanation": "Object.seal() prevents adding/removing properties."
+},
+{
+"id": 137,
+"level": "hard",
+"question": "Which method checks own property?",
+"options": ["hasOwn()", "hasOwnProperty()", "in()", "exists()"],
+"correctIndex": 1,
+"explanation": "hasOwnProperty checks own properties only."
+},
+{
+"id": 138,
+"level": "hard",
+"question": "Which loop iterates object properties?",
+"options": ["for...in", "for...of", "loop", "each"],
+"correctIndex": 0,
+"explanation": "for...in iterates object keys."
+},
+{
+"id": 139,
+"level": "hard",
+"question": "Which loop iterates iterable values?",
+"options": ["for...of", "for...in", "each", "loop"],
+"correctIndex": 0,
+"explanation": "for...of iterates iterable values."
+},
+{
+"id": 140,
+"level": "hard",
+"question": "Which structure holds weak object references?",
+"options": ["WeakMap", "Map", "Set", "Array"],
+"correctIndex": 0,
+"explanation": "WeakMap holds weak references to keys."
+},
+
+{
+"id": 141,
+"level": "easy",
+"question": "Which keyword stops a loop completely?",
+"options": ["break", "continue", "return", "stop"],
+"correctIndex": 0,
+"explanation": "break exits the loop."
+},
+{
+"id": 142,
+"level": "easy",
+"question": "Which function returns random number?",
+"options": ["Math.random()", "Math.rand()", "random()", "rand()"],
+"correctIndex": 0,
+"explanation": "Math.random() returns value between 0 and 1."
+},
+{
+"id": 143,
+"level": "easy",
+"question": "Which operator multiplies values?",
+"options": ["*", "+", "-", "/"],
+"correctIndex": 0,
+"explanation": "* multiplies numeric values."
+},
+{
+"id": 144,
+"level": "easy",
+"question": "Which keyword defines strict mode?",
+"options": ["use strict", "strict()", "mode()", "safe"],
+"correctIndex": 0,
+"explanation": "use strict enables strict mode."
+},
+{
+"id": 145,
+"level": "easy",
+"question": "Which method trims whitespace?",
+"options": ["trim()", "slice()", "cut()", "remove()"],
+"correctIndex": 0,
+"explanation": "trim() removes whitespace."
+},
+
+{
+"id": 146,
+"level": "medium",
+"question": "Which method pads string start?",
+"options": ["padStart()", "padEnd()", "fill()", "repeat()"],
+"correctIndex": 0,
+"explanation": "padStart adds padding at start."
+},
+{
+"id": 147,
+"level": "medium",
+"question": "Which method pads string end?",
+"options": ["padEnd()", "padStart()", "fill()", "append()"],
+"correctIndex": 0,
+"explanation": "padEnd adds padding at end."
+},
+{
+"id": 148,
+"level": "medium",
+"question": "Which method repeats string?",
+"options": ["repeat()", "loop()", "copy()", "times()"],
+"correctIndex": 0,
+"explanation": "repeat duplicates string."
+},
+{
+"id": 149,
+"level": "medium",
+"question": "Which operator merges objects?",
+"options": ["...", "merge()", "concat()", "::"],
+"correctIndex": 0,
+"explanation": "Spread operator merges objects."
+},
+{
+"id": 150,
+"level": "medium",
+"question": "Which method finds index of element?",
+"options": ["indexOf()", "find()", "search()", "locate()"],
+"correctIndex": 0,
+"explanation": "indexOf returns element index."
+},
+
+{
+"id": 151,
+"level": "hard",
+"question": "Which API tracks idle user time?",
+"options": ["Idle Detection API", "Timer API", "Focus API", "Visibility API"],
+"correctIndex": 0,
+"explanation": "Idle Detection API tracks inactivity."
+},
+{
+"id": 152,
+"level": "hard",
+"question": "Which API detects page visibility?",
+"options": ["Page Visibility API", "Focus API", "Screen API", "View API"],
+"correctIndex": 0,
+"explanation": "Page Visibility API detects visibility."
+},
+{
+"id": 153,
+"level": "hard",
+"question": "Which API handles speech recognition?",
+"options": ["Web Speech API", "Voice API", "Audio API", "Speech API"],
+"correctIndex": 0,
+"explanation": "Web Speech API supports speech recognition."
+},
+{
+"id": 154,
+"level": "hard",
+"question": "Which API handles audio processing?",
+"options": ["Web Audio API", "Sound API", "AudioContext API", "Media API"],
+"correctIndex": 0,
+"explanation": "Web Audio API handles audio."
+},
+{
+"id": 155,
+"level": "hard",
+"question": "Which API captures media devices?",
+"options": ["MediaDevices API", "Camera API", "Video API", "Capture API"],
+"correctIndex": 0,
+"explanation": "MediaDevices API accesses camera and mic."
+},
+
+{
+"id": 156,
+"level": "easy",
+"question": "Which keyword defines function parameter?",
+"options": ["()", "{}", "[]", "<>"],
+"correctIndex": 0,
+"explanation": "Parameters are defined inside parentheses."
+},
+{
+"id": 157,
+"level": "easy",
+"question": "Which operator assigns value?",
+"options": ["=", "==", "===", ":="],
+"correctIndex": 0,
+"explanation": "= assigns values."
+},
+{
+"id": 158,
+"level": "easy",
+"question": "Which value represents empty object?",
+"options": ["{}", "null", "undefined", "[]"],
+"correctIndex": 0,
+"explanation": "{} creates empty object."
+},
+{
+"id": 159,
+"level": "easy",
+"question": "Which method converts value to string?",
+"options": ["String()", "Number()", "Boolean()", "parseInt()"],
+"correctIndex": 0,
+"explanation": "String() converts value to string."
+},
+{
+"id": 160,
+"level": "easy",
+"question": "Which operator checks greater than?",
+"options": [">", "<", ">=", "<="],
+"correctIndex": 0,
+"explanation": "> checks greater value."
+},
+
+{
+"id": 161,
+"level": "medium",
+"question": "Which API schedules background sync?",
+"options": ["Background Sync API", "Service Worker API", "Worker API", "Sync API"],
+"correctIndex": 0,
+"explanation": "Background Sync schedules sync tasks."
+},
+{
+"id": 162,
+"level": "medium",
+"question": "Which API tracks network status?",
+"options": ["Network Information API", "Connection API", "Status API", "Online API"],
+"correctIndex": 0,
+"explanation": "Network Information API tracks connection."
+},
+{
+"id": 163,
+"level": "medium",
+"question": "Which API shares content?",
+"options": ["Web Share API", "Share API", "Content API", "Send API"],
+"correctIndex": 0,
+"explanation": "Web Share API enables sharing."
+},
+{
+"id": 164,
+"level": "medium",
+"question": "Which API stores large data?",
+"options": ["IndexedDB", "localStorage", "sessionStorage", "cookie"],
+"correctIndex": 0,
+"explanation": "IndexedDB stores large structured data."
+},
+{
+"id": 165,
+"level": "medium",
+"question": "Which API tracks device orientation?",
+"options": ["Device Orientation API", "Motion API", "Rotation API", "Gyro API"],
+"correctIndex": 0,
+"explanation": "Device Orientation API tracks orientation."
+},
+
+{
+"id": 166,
+"level": "hard",
+"question": "Which API tracks motion sensors?",
+"options": ["Device Motion API", "Sensor API", "Motion API", "Accelerometer API"],
+"correctIndex": 0,
+"explanation": "Device Motion API tracks motion."
+},
+{
+"id": 167,
+"level": "hard",
+"question": "Which API enables NFC?",
+"options": ["Web NFC API", "NFC API", "NearField API", "Contact API"],
+"correctIndex": 0,
+"explanation": "Web NFC API enables NFC."
+},
+{
+"id": 168,
+"level": "hard",
+"question": "Which API enables Bluetooth?",
+"options": ["Web Bluetooth API", "Bluetooth API", "BT API", "Device API"],
+"correctIndex": 0,
+"explanation": "Web Bluetooth API enables Bluetooth."
+},
+{
+"id": 169,
+"level": "hard",
+"question": "Which API enables USB access?",
+"options": ["WebUSB API", "USB API", "Device API", "Port API"],
+"correctIndex": 0,
+"explanation": "WebUSB API allows USB access."
+},
+{
+"id": 170,
+"level": "hard",
+"question": "Which API enables serial communication?",
+"options": ["Web Serial API", "Serial API", "Port API", "COM API"],
+"correctIndex": 0,
+"explanation": "Web Serial API enables serial communication."
+},
+
+{
+"id": 171,
+"level": "easy",
+"question": "Which keyword defines function return value?",
+"options": ["return", "yield", "send", "output"],
+"correctIndex": 0,
+"explanation": "return sends value back."
+},
+{
+"id": 172,
+"level": "easy",
+"question": "Which operator divides values?",
+"options": ["/", "*", "-", "+"],
+"correctIndex": 0,
+"explanation": "/ divides numeric values."
+},
+{
+"id": 173,
+"level": "easy",
+"question": "Which method checks array length?",
+"options": ["length", "size()", "count()", "total()"],
+"correctIndex": 0,
+"explanation": "length returns size."
+},
+{
+"id": 174,
+"level": "easy",
+"question": "Which value represents undefined state?",
+"options": ["undefined", "null", "NaN", "false"],
+"correctIndex": 0,
+"explanation": "undefined means no value assigned."
+},
+{
+"id": 175,
+"level": "easy",
+"question": "Which keyword checks multiple cases?",
+"options": ["switch", "if", "case", "loop"],
+"correctIndex": 0,
+"explanation": "switch checks multiple cases."
+},
+
+{
+"id": 176,
+"level": "medium",
+"question": "Which method clones object shallowly?",
+"options": ["Object.assign()", "structuredClone()", "JSON.parse()", "clone()"],
+"correctIndex": 0,
+"explanation": "Object.assign creates shallow copy."
+},
+{
+"id": 177,
+"level": "medium",
+"question": "Which method converts iterable to array?",
+"options": ["Array.from()", "toArray()", "spread()", "convert()"],
+"correctIndex": 0,
+"explanation": "Array.from converts iterables."
+},
+{
+"id": 178,
+"level": "medium",
+"question": "Which keyword defines rest parameters?",
+"options": ["...", "rest", "params", "args"],
+"correctIndex": 0,
+"explanation": "Rest parameters collect arguments."
+},
+{
+"id": 179,
+"level": "medium",
+"question": "Which operator checks instance type?",
+"options": ["instanceof", "typeof", "in", "is"],
+"correctIndex": 0,
+"explanation": "instanceof checks constructor."
+},
+{
+"id": 180,
+"level": "medium",
+"question": "Which method sorts array?",
+"options": ["sort()", "order()", "arrange()", "sequence()"],
+"correctIndex": 0,
+"explanation": "sort() orders array elements."
+},
+
+{
+"id": 181,
+"level": "hard",
+"question": "Which API manages browser history state?",
+"options": ["History API", "Location API", "Navigation API", "State API"],
+"correctIndex": 0,
+"explanation": "History API manages navigation state."
+},
+{
+"id": 182,
+"level": "hard",
+"question": "Which API schedules tasks during idle time?",
+"options": ["requestIdleCallback()", "setTimeout()", "requestAnimationFrame()", "idle()"],
+"correctIndex": 0,
+"explanation": "requestIdleCallback schedules idle tasks."
+},
+{
+"id": 183,
+"level": "hard",
+"question": "Which API captures screenshots?",
+"options": ["Screen Capture API", "MediaDevices API", "Display API", "View API"],
+"correctIndex": 0,
+"explanation": "Screen Capture API captures display."
+},
+{
+"id": 184,
+"level": "hard",
+"question": "Which API enables file system access?",
+"options": ["File System Access API", "File API", "Storage API", "Disk API"],
+"correctIndex": 0,
+"explanation": "File System Access API enables file read/write."
+},
+{
+"id": 185,
+"level": "hard",
+"question": "Which API handles payment requests?",
+"options": ["Payment Request API", "Checkout API", "Billing API", "Pay API"],
+"correctIndex": 0,
+"explanation": "Payment Request API handles payments."
+},
+
+{
+"id": 186,
+"level": "easy",
+"question": "Which operator subtracts values?",
+"options": ["-", "+", "*", "/"],
+"correctIndex": 0,
+"explanation": "- subtracts numbers."
+},
+{
+"id": 187,
+"level": "easy",
+"question": "Which value represents empty array?",
+"options": ["[]", "{}", "null", "undefined"],
+"correctIndex": 0,
+"explanation": "[] defines empty array."
+},
+{
+"id": 188,
+"level": "easy",
+"question": "Which keyword defines function expression?",
+"options": ["const", "function", "=>", "let"],
+"correctIndex": 0,
+"explanation": "Function expressions often assigned to const."
+},
+{
+"id": 189,
+"level": "easy",
+"question": "Which method checks string length?",
+"options": ["length", "size()", "count()", "total()"],
+"correctIndex": 0,
+"explanation": "length returns string length."
+},
+{
+"id": 190,
+"level": "easy",
+"question": "Which operator compares greater or equal?",
+"options": [">=", ">", "<=", "<"],
+"correctIndex": 0,
+"explanation": ">= checks greater or equal."
+},
+
+{
+"id": 191,
+"level": "medium",
+"question": "Which API schedules notifications?",
+"options": ["Notification API", "Push API", "Alert API", "Message API"],
+"correctIndex": 0,
+"explanation": "Notification API shows notifications."
+},
+{
+"id": 192,
+"level": "medium",
+"question": "Which API tracks clipboard changes?",
+"options": ["Clipboard API", "Paste API", "Copy API", "Text API"],
+"correctIndex": 0,
+"explanation": "Clipboard API handles clipboard."
+},
+{
+"id": 193,
+"level": "medium",
+"question": "Which API enables vibration?",
+"options": ["Vibration API", "Haptic API", "Motion API", "Device API"],
+"correctIndex": 0,
+"explanation": "Vibration API triggers vibration."
+},
+{
+"id": 194,
+"level": "medium",
+"question": "Which API accesses contacts?",
+"options": ["Contact Picker API", "Contacts API", "People API", "Phone API"],
+"correctIndex": 0,
+"explanation": "Contact Picker API accesses contacts."
+},
+{
+"id": 195,
+"level": "medium",
+"question": "Which API accesses sensors?",
+"options": ["Generic Sensor API", "Device API", "Hardware API", "Motion API"],
+"correctIndex": 0,
+"explanation": "Generic Sensor API accesses sensors."
+},
+
+{
+"id": 196,
+"level": "hard",
+"question": "Which API enables VR?",
+"options": ["WebXR API", "VR API", "XR API", "Immersive API"],
+"correctIndex": 0,
+"explanation": "WebXR API enables VR and AR."
+},
+{
+"id": 197,
+"level": "hard",
+"question": "Which API enables speech synthesis?",
+"options": ["Speech Synthesis API", "Voice API", "Audio API", "Talk API"],
+"correctIndex": 0,
+"explanation": "Speech Synthesis API generates speech."
+},
+{
+"id": 198,
+"level": "hard",
+"question": "Which API enables handwriting recognition?",
+"options": ["Ink API", "Handwriting API", "Pointer API", "Draw API"],
+"correctIndex": 0,
+"explanation": "Ink API supports handwriting."
+},
+{
+"id": 199,
+"level": "hard",
+"question": "Which API enables face detection?",
+"options": ["Shape Detection API", "Vision API", "Face API", "Image API"],
+"correctIndex": 0,
+"explanation": "Shape Detection API supports face detection."
+},
+{
+"id": 200,
+"level": "hard",
+"question": "Which API enables barcode scanning?",
+"options": ["Barcode Detection API", "Scan API", "Code API", "Camera API"],
+"correctIndex": 0,
+"explanation": "Barcode Detection API scans barcodes."
+},
+{
+"id": 201,
+"level": "easy",
+"question": "Which keyword declares a variable with function scope?",
+"options": ["var", "let", "const", "scope"],
+"correctIndex": 0,
+"explanation": "var has function-level scope in JavaScript."
+},
+{
+"id": 202,
+"level": "easy",
+"question": "Which value is returned when no return statement exists?",
+"options": ["undefined", "null", "false", "0"],
+"correctIndex": 0,
+"explanation": "Functions return undefined by default."
+},
+{
+"id": 203,
+"level": "easy",
+"question": "Which symbol starts a template literal?",
+"options": ["`", "", "'", "#"],
+"correctIndex": 0,
+"explanation": "Backticks define template literals."
+},
+{
+"id": 204,
+"level": "easy",
+"question": "Which syntax inserts variable into template literal?",
+"options": ["${}", "{}", "$()", "#{}"],
+"correctIndex": 0,
+"explanation": "${} embeds expressions inside template literals."
+},
+{
+"id": 205,
+"level": "easy",
+"question": "Which operator checks less than?",
+"options": ["<", ">", "<=", ">="],
+"correctIndex": 0,
+"explanation": "< checks if left value is smaller."
+},
+
+{
+"id": 206,
+"level": "medium",
+"question": "Which array method finds first matching element?",
+"options": ["find()", "filter()", "map()", "some()"],
+"correctIndex": 0,
+"explanation": "find() returns the first matched element."
+},
+{
+"id": 207,
+"level": "medium",
+"question": "Which array method finds index of matching element?",
+"options": ["findIndex()", "indexOf()", "search()", "locate()"],
+"correctIndex": 0,
+"explanation": "findIndex() returns index of first matching element."
+},
+{
+"id": 208,
+"level": "medium",
+"question": "Which string method checks substring?",
+"options": ["includes()", "contains()", "has()", "matchAll()"],
+"correctIndex": 0,
+"explanation": "includes() checks substring existence."
+},
+{
+"id": 209,
+"level": "medium",
+"question": "Which method converts string to lowercase?",
+"options": ["toLowerCase()", "lower()", "convert()", "small()"],
+"correctIndex": 0,
+"explanation": "toLowerCase() converts string to lowercase."
+},
+{
+"id": 210,
+"level": "medium",
+"question": "Which method converts string to uppercase?",
+"options": ["toUpperCase()", "upper()", "convert()", "big()"],
+"correctIndex": 0,
+"explanation": "toUpperCase() converts string to uppercase."
+},
+
+{
+"id": 211,
+"level": "hard",
+"question": "Which feature allows destructuring assignment?",
+"options": ["ES6", "ES5", "ES3", "DOM"],
+"correctIndex": 0,
+"explanation": "Destructuring was introduced in ES6."
+},
+{
+"id": 212,
+"level": "hard",
+"question": "Which destructuring extracts property from object?",
+"options": ["const {a} = obj", "const [a] = obj", "obj.a()", "obj[a]"],
+"correctIndex": 0,
+"explanation": "Object destructuring extracts properties."
+},
+{
+"id": 213,
+"level": "hard",
+"question": "Which destructuring extracts array values?",
+"options": ["const [a] = arr", "const {a} = arr", "arr.a", "arr[a]"],
+"correctIndex": 0,
+"explanation": "Array destructuring extracts values by index."
+},
+{
+"id": 214,
+"level": "hard",
+"question": "Which operator combines rest values?",
+"options": ["...", "??", "||", "::"],
+"correctIndex": 0,
+"explanation": "Spread/rest operator collects remaining values."
+},
+{
+"id": 215,
+"level": "hard",
+"question": "Which feature enables default parameters?",
+"options": ["ES6", "ES5", "ES3", "ES7"],
+"correctIndex": 0,
+"explanation": "Default parameters were introduced in ES6."
+},
+
+{
+"id": 216,
+"level": "easy",
+"question": "Which method removes decimals from number?",
+"options": ["Math.trunc()", "Math.round()", "Math.floor()", "Math.ceil()"],
+"correctIndex": 0,
+"explanation": "Math.trunc() removes decimal part."
+},
+{
+"id": 217,
+"level": "easy",
+"question": "Which keyword defines an empty statement?",
+"options": [";", "{}", "pass", "skip"],
+"correctIndex": 0,
+"explanation": "A semicolon represents an empty statement."
+},
+{
+"id": 218,
+"level": "easy",
+"question": "Which operator checks equality without type?",
+"options": ["==", "===", "!=", "<="],
+"correctIndex": 0,
+"explanation": "== checks value equality only."
+},
+{
+"id": 219,
+"level": "easy",
+"question": "Which value represents negative infinity?",
+"options": ["-Infinity", "Infinity", "NaN", "undefined"],
+"correctIndex": 0,
+"explanation": "-Infinity represents negative infinity."
+},
+{
+"id": 220,
+"level": "easy",
+"question": "Which operator performs modulo?",
+"options": ["%", "/", "*", "+"],
+"correctIndex": 0,
+"explanation": "% returns remainder of division."
+},
+
+{
+"id": 221,
+"level": "medium",
+"question": "Which method converts object keys to array?",
+"options": ["Object.keys()", "Object.values()", "Object.entries()", "Object.get()"],
+"correctIndex": 0,
+"explanation": "Object.keys() returns array of keys."
+},
+{
+"id": 222,
+"level": "medium",
+"question": "Which method converts object values to array?",
+"options": ["Object.values()", "Object.keys()", "Object.entries()", "Object.map()"],
+"correctIndex": 0,
+"explanation": "Object.values() returns array of values."
+},
+{
+"id": 223,
+"level": "medium",
+"question": "Which method converts object to key-value array?",
+"options": ["Object.entries()", "Object.keys()", "Object.values()", "Object.all()"],
+"correctIndex": 0,
+"explanation": "Object.entries() returns key-value pairs."
+},
+{
+"id": 224,
+"level": "medium",
+"question": "Which operator deletes object property?",
+"options": ["delete", "remove", "unset", "clear"],
+"correctIndex": 0,
+"explanation": "delete removes object properties."
+},
+{
+"id": 225,
+"level": "medium",
+"question": "Which keyword defines a label?",
+"options": ["label:", "case", "goto", "mark"],
+"correctIndex": 0,
+"explanation": "Labels are defined using identifier followed by colon."
+},
+
+{
+"id": 226,
+"level": "hard",
+"question": "Which object represents execution context?",
+"options": ["Call Stack", "Heap", "Queue", "Event Loop"],
+"correctIndex": 0,
+"explanation": "Call Stack manages execution contexts."
+},
+{
+"id": 227,
+"level": "hard",
+"question": "Which structure stores memory allocations?",
+"options": ["Heap", "Stack", "Queue", "List"],
+"correctIndex": 0,
+"explanation": "Heap stores objects and memory allocations."
+},
+{
+"id": 228,
+"level": "hard",
+"question": "Which queue handles async callbacks?",
+"options": ["Task Queue", "Call Stack", "Heap", "Memory"],
+"correctIndex": 0,
+"explanation": "Task queue stores async callbacks."
+},
+{
+"id": 229,
+"level": "hard",
+"question": "Which queue handles promise callbacks?",
+"options": ["Microtask Queue", "Task Queue", "Call Stack", "Heap"],
+"correctIndex": 0,
+"explanation": "Microtask queue handles promise callbacks."
+},
+{
+"id": 230,
+"level": "hard",
+"question": "Which engine executes JavaScript in Chrome?",
+"options": ["V8", "SpiderMonkey", "Chakra", "Nitro"],
+"correctIndex": 0,
+"explanation": "V8 is Chrome’s JavaScript engine."
+},
+
+{
+"id": 231,
+"level": "easy",
+"question": "Which keyword defines conditional logic?",
+"options": ["if", "when", "case", "check"],
+"correctIndex": 0,
+"explanation": "if executes code based on condition."
+},
+{
+"id": 232,
+"level": "easy",
+"question": "Which operator assigns and adds value?",
+"options": ["+=", "-=", "*=", "/="],
+"correctIndex": 0,
+"explanation": "+= adds and assigns value."
+},
+{
+"id": 233,
+"level": "easy",
+"question": "Which method converts float to integer string?",
+"options": ["toFixed()", "parseInt()", "Math.round()", "String()"],
+"correctIndex": 0,
+"explanation": "toFixed() formats number to fixed decimals."
+},
+{
+"id": 234,
+"level": "easy",
+"question": "Which keyword defines a block?",
+"options": ["{}", "()", "[]", "<>"],
+"correctIndex": 0,
+"explanation": "Curly braces define blocks."
+},
+{
+"id": 235,
+"level": "easy",
+"question": "Which method checks array type?",
+"options": ["Array.isArray()", "typeof", "instanceof", "checkArray()"],
+"correctIndex": 0,
+"explanation": "Array.isArray() checks array type."
+},
+
+{
+"id": 236,
+"level": "medium",
+"question": "Which API schedules repeated tasks?",
+"options": ["setInterval()", "setTimeout()", "requestAnimationFrame()", "repeat()"],
+"correctIndex": 0,
+"explanation": "setInterval runs repeatedly."
+},
+{
+"id": 237,
+"level": "medium",
+"question": "Which API cancels interval?",
+"options": ["clearInterval()", "stopInterval()", "cancel()", "clearTimeout()"],
+"correctIndex": 0,
+"explanation": "clearInterval stops intervals."
+},
+{
+"id": 238,
+"level": "medium",
+"question": "Which API cancels timeout?",
+"options": ["clearTimeout()", "stopTimeout()", "cancel()", "clearInterval()"],
+"correctIndex": 0,
+"explanation": "clearTimeout cancels timeout."
+},
+{
+"id": 239,
+"level": "medium",
+"question": "Which object stores browser cookies?",
+"options": ["document.cookie", "window.cookie", "navigator.cookie", "cookieStore"],
+"correctIndex": 0,
+"explanation": "document.cookie handles cookies."
+},
+{
+"id": 240,
+"level": "medium",
+"question": "Which method encodes URL component?",
+"options": ["encodeURIComponent()", "encodeURI()", "decodeURI()", "escape()"],
+"correctIndex": 0,
+"explanation": "encodeURIComponent encodes URL parts."
+},
+
+{
+"id": 241,
+"level": "hard",
+"question": "Which API decodes URL component?",
+"options": ["decodeURIComponent()", "decodeURI()", "encodeURI()", "unescape()"],
+"correctIndex": 0,
+"explanation": "decodeURIComponent decodes URL components."
+},
+{
+"id": 242,
+"level": "hard",
+"question": "Which API controls fullscreen mode?",
+"options": ["Fullscreen API", "Screen API", "Display API", "View API"],
+"correctIndex": 0,
+"explanation": "Fullscreen API enables fullscreen mode."
+},
+{
+"id": 243,
+"level": "hard",
+"question": "Which API controls pointer input?",
+"options": ["Pointer Events API", "Mouse API", "Touch API", "Input API"],
+"correctIndex": 0,
+"explanation": "Pointer Events API handles pointer inputs."
+},
+{
+"id": 244,
+"level": "hard",
+"question": "Which API handles touch events?",
+"options": ["Touch Events API", "Pointer API", "Gesture API", "Motion API"],
+"correctIndex": 0,
+"explanation": "Touch Events API handles touch interactions."
+},
+{
+"id": 245,
+"level": "hard",
+"question": "Which API tracks screen orientation?",
+"options": ["Screen Orientation API", "Device Orientation API", "Display API", "Rotate API"],
+"correctIndex": 0,
+"explanation": "Screen Orientation API tracks orientation."
+},
+
+{
+"id": 246,
+"level": "easy",
+"question": "Which keyword defines arrow function body?",
+"options": ["=>", "{}", "()", "->"],
+"correctIndex": 0,
+"explanation": "=> separates parameters and body."
+},
+{
+"id": 247,
+"level": "easy",
+"question": "Which method removes last string character?",
+"options": ["slice()", "pop()", "remove()", "trim()"],
+"correctIndex": 0,
+"explanation": "slice() can remove last character."
+},
+{
+"id": 248,
+"level": "easy",
+"question": "Which operator performs exponentiation?",
+"options": ["**", "^", "*", "pow"],
+"correctIndex": 0,
+"explanation": "** performs exponentiation."
+},
+{
+"id": 249,
+"level": "easy",
+"question": "Which value represents NaN type?",
+"options": ["number", "string", "object", "undefined"],
+"correctIndex": 0,
+"explanation": "NaN is of type number."
+},
+{
+"id": 250,
+"level": "easy",
+"question": "Which method checks finite number?",
+"options": ["Number.isFinite()", "isNaN()", "Math.isFinite()", "checkFinite()"],
+"correctIndex": 0,
+"explanation": "Number.isFinite checks finite numbers."
+},
+
+{
+"id": 251,
+"level": "medium",
+"question": "Which API groups console logs?",
+"options": ["console.group()", "console.log()", "console.table()", "console.dir()"],
+"correctIndex": 0,
+"explanation": "console.group groups logs."
+},
+{
+"id": 252,
+"level": "medium",
+"question": "Which API measures time in console?",
+"options": ["console.time()", "console.clock()", "console.measure()", "console.timer()"],
+"correctIndex": 0,
+"explanation": "console.time measures execution time."
+},
+{
+"id": 253,
+"level": "medium",
+"question": "Which API ends console timer?",
+"options": ["console.timeEnd()", "console.end()", "console.stop()", "console.close()"],
+"correctIndex": 0,
+"explanation": "console.timeEnd stops timer."
+},
+{
+"id": 254,
+"level": "medium",
+"question": "Which API outputs table format?",
+"options": ["console.table()", "console.log()", "console.dir()", "console.list()"],
+"correctIndex": 0,
+"explanation": "console.table displays tabular data."
+},
+{
+"id": 255,
+"level": "medium",
+"question": "Which API clears console?",
+"options": ["console.clear()", "console.reset()", "console.clean()", "console.remove()"],
+"correctIndex": 0,
+"explanation": "console.clear clears console."
+},
+
+{
+"id": 256,
+"level": "hard",
+"question": "Which API profiles performance?",
+"options": ["console.profile()", "console.time()", "Performance API", "Profiler API"],
+"correctIndex": 0,
+"explanation": "console.profile records performance profile."
+},
+{
+"id": 257,
+"level": "hard",
+"question": "Which API asserts condition in console?",
+"options": ["console.assert()", "console.check()", "console.verify()", "console.test()"],
+"correctIndex": 0,
+"explanation": "console.assert logs error if false."
+},
+{
+"id": 258,
+"level": "hard",
+"question": "Which API traces call stack?",
+"options": ["console.trace()", "console.stack()", "console.calls()", "console.log()"],
+"correctIndex": 0,
+"explanation": "console.trace prints call stack."
+},
+{
+"id": 259,
+"level": "hard",
+"question": "Which API counts logs?",
+"options": ["console.count()", "console.total()", "console.size()", "console.length()"],
+"correctIndex": 0,
+"explanation": "console.count counts occurrences."
+},
+{
+"id": 260,
+"level": "hard",
+"question": "Which API resets console counter?",
+"options": ["console.countReset()", "console.reset()", "console.clear()", "console.zero()"],
+"correctIndex": 0,
+"explanation": "console.countReset resets counter."
+},
+
+{
+"id": 261,
+"level": "easy",
+"question": "Which method converts string to array?",
+"options": ["split()", "join()", "slice()", "splice()"],
+"correctIndex": 0,
+"explanation": "split() converts string to array."
+},
+{
+"id": 262,
+"level": "easy",
+"question": "Which method repeats execution once?",
+"options": ["setTimeout()", "setInterval()", "repeat()", "loop()"],
+"correctIndex": 0,
+"explanation": "setTimeout executes once after delay."
+},
+{
+"id": 263,
+"level": "easy",
+"question": "Which keyword creates an instance?",
+"options": ["new", "create", "instance", "make"],
+"correctIndex": 0,
+"explanation": "new creates object instances."
+},
+{
+"id": 264,
+"level": "easy",
+"question": "Which method checks object type?",
+"options": ["typeof", "instanceof", "isObject()", "check()"],
+"correctIndex": 0,
+"explanation": "typeof checks variable type."
+},
+{
+"id": 265,
+"level": "easy",
+"question": "Which operator performs bitwise AND?",
+"options": ["&", "&&", "|", "^"],
+"correctIndex": 0,
+"explanation": "& performs bitwise AND."
+},
+
+{
+"id": 266,
+"level": "medium",
+"question": "Which operator performs bitwise OR?",
+"options": ["|", "||", "&", "^"],
+"correctIndex": 0,
+"explanation": "| performs bitwise OR."
+},
+{
+"id": 267,
+"level": "medium",
+"question": "Which operator performs bitwise XOR?",
+"options": ["^", "&", "|", ">>"],
+"correctIndex": 0,
+"explanation": "^ performs bitwise XOR."
+},
+{
+"id": 268,
+"level": "medium",
+"question": "Which operator shifts bits left?",
+"options": ["<<", ">>", ">>>", "<>"],
+"correctIndex": 0,
+"explanation": "<< shifts bits left."
+},
+{
+"id": 269,
+"level": "medium",
+"question": "Which operator shifts bits right?",
+"options": [">>", "<<", ">>>", "<>"],
+"correctIndex": 0,
+"explanation": ">> shifts bits right."
+},
+{
+"id": 270,
+"level": "medium",
+"question": "Which operator shifts bits without sign?",
+"options": [">>>", "<<", ">>", "&"],
+"correctIndex": 0,
+"explanation": ">>> performs unsigned right shift."
+},
+
+{
+"id": 271,
+"level": "hard",
+"question": "Which API enables shared memory?",
+"options": ["SharedArrayBuffer", "ArrayBuffer", "Buffer", "MemoryAPI"],
+"correctIndex": 0,
+"explanation": "SharedArrayBuffer enables shared memory."
+},
+{
+"id": 272,
+"level": "hard",
+"question": "Which API handles atomic operations?",
+"options": ["Atomics", "Threads", "Locks", "SyncAPI"],
+"correctIndex": 0,
+"explanation": "Atomics provides atomic operations."
+},
+{
+"id": 273,
+"level": "hard",
+"question": "Which object represents binary data?",
+"options": ["ArrayBuffer", "Blob", "Buffer", "Binary"],
+"correctIndex": 0,
+"explanation": "ArrayBuffer represents raw binary data."
+},
+{
+"id": 274,
+"level": "hard",
+"question": "Which object represents file-like binary data?",
+"options": ["Blob", "ArrayBuffer", "File", "Binary"],
+"correctIndex": 0,
+"explanation": "Blob represents binary data."
+},
+{
+"id": 275,
+"level": "hard",
+"question": "Which object extends Blob with metadata?",
+"options": ["File", "ArrayBuffer", "Stream", "Binary"],
+"correctIndex": 0,
+"explanation": "File extends Blob with name and metadata."
+},
+
+{
+"id": 276,
+"level": "easy",
+"question": "Which method removes first character of string?",
+"options": ["slice(1)", "trim()", "cut()", "remove()"],
+"correctIndex": 0,
+"explanation": "slice(1) removes first character."
+},
+{
+"id": 277,
+"level": "easy",
+"question": "Which keyword defines anonymous function?",
+"options": ["function", "anonymous", "=>", "lambda"],
+"correctIndex": 0,
+"explanation": "function keyword can define anonymous functions."
+},
+{
+"id": 278,
+"level": "easy",
+"question": "Which operator concatenates strings?",
+"options": ["+", "&", "||", "::"],
+"correctIndex": 0,
+"explanation": "+ concatenates strings."
+},
+{
+"id": 279,
+"level": "easy",
+"question": "Which method repeats string n times?",
+"options": ["repeat()", "loop()", "multiply()", "clone()"],
+"correctIndex": 0,
+"explanation": "repeat() repeats string."
+},
+{
+"id": 280,
+"level": "easy",
+"question": "Which value is falsy?",
+"options": ["0", "1", "a", "{}"],
+"correctIndex": 0,
+"explanation": "0 is a falsy value."
+},
+
+{
+"id": 281,
+"level": "medium",
+"question": "Which method trims string start?",
+"options": ["trimStart()", "trim()", "trimEnd()", "cutStart()"],
+"correctIndex": 0,
+"explanation": "trimStart removes leading spaces."
+},
+{
+"id": 282,
+"level": "medium",
+"question": "Which method trims string end?",
+"options": ["trimEnd()", "trim()", "trimStart()", "cutEnd()"],
+"correctIndex": 0,
+"explanation": "trimEnd removes trailing spaces."
+},
+{
+"id": 283,
+"level": "medium",
+"question": "Which API encodes Base64?",
+"options": ["btoa()", "atob()", "encode()", "base64()"],
+"correctIndex": 0,
+"explanation": "btoa encodes Base64."
+},
+{
+"id": 284,
+"level": "medium",
+"question": "Which API decodes Base64?",
+"options": ["atob()", "btoa()", "decode()", "base64Decode()"],
+"correctIndex": 0,
+"explanation": "atob decodes Base64."
+},
+{
+"id": 285,
+"level": "medium",
+"question": "Which method checks NaN correctly?",
+"options": ["Number.isNaN()", "isNaN()", "typeof", "checkNaN()"],
+"correctIndex": 0,
+"explanation": "Number.isNaN checks NaN strictly."
+},
+
+{
+"id": 286,
+"level": "hard",
+"question": "Which API handles streams?",
+"options": ["Streams API", "Flow API", "Pipe API", "StreamJS"],
+"correctIndex": 0,
+"explanation": "Streams API handles streaming data."
+},
+{
+"id": 287,
+"level": "hard",
+"question": "Which object reads streams?",
+"options": ["ReadableStream", "WritableStream", "TransformStream", "StreamReader"],
+"correctIndex": 0,
+"explanation": "ReadableStream reads data streams."
+},
+{
+"id": 288,
+"level": "hard",
+"question": "Which object writes streams?",
+"options": ["WritableStream", "ReadableStream", "TransformStream", "StreamWriter"],
+"correctIndex": 0,
+"explanation": "WritableStream writes data streams."
+},
+{
+"id": 289,
+"level": "hard",
+"question": "Which object transforms streams?",
+"options": ["TransformStream", "ReadableStream", "WritableStream", "PipeStream"],
+"correctIndex": 0,
+"explanation": "TransformStream modifies stream data."
+},
+{
+"id": 290,
+"level": "hard",
+"question": "Which API enables compression?",
+"options": ["Compression Streams API", "Zip API", "Compress API", "Archive API"],
+"correctIndex": 0,
+"explanation": "Compression Streams API enables compression."
+},
+
+{
+"id": 291,
+"level": "easy",
+"question": "Which operator performs logical NOT?",
+"options": ["!", "&&", "||", "~"],
+"correctIndex": 0,
+"explanation": "! negates boolean values."
+},
+{
+"id": 292,
+"level": "easy",
+"question": "Which method converts array to string with separator?",
+"options": ["join()", "toString()", "concat()", "merge()"],
+"correctIndex": 0,
+"explanation": "join uses custom separator."
+},
+{
+"id": 293,
+"level": "easy",
+"question": "Which value is truthy?",
+"options": ["1", "0", "null", "undefined"],
+"correctIndex": 0,
+"explanation": "1 is a truthy value."
+},
+{
+"id": 294,
+"level": "easy",
+"question": "Which method rounds to nearest integer?",
+"options": ["Math.round()", "Math.floor()", "Math.ceil()", "Math.trunc()"],
+"correctIndex": 0,
+"explanation": "Math.round rounds to nearest integer."
+},
+{
+"id": 295,
+"level": "easy",
+"question": "Which keyword defines default export?",
+"options": ["export default", "export", "module", "default"],
+"correctIndex": 0,
+"explanation": "export default defines default export."
+},
+
+{
+"id": 296,
+"level": "medium",
+"question": "Which keyword imports default export?",
+"options": ["import", "require", "include", "use"],
+"correctIndex": 0,
+"explanation": "import is used to import modules."
+},
+{
+"id": 297,
+"level": "medium",
+"question": "Which keyword imports named exports?",
+"options": ["import { }", "require()", "use()", "include()"],
+"correctIndex": 0,
+"explanation": "import { } imports named exports."
+},
+{
+"id": 298,
+"level": "medium",
+"question": "Which file type supports ES modules?",
+"options": [".mjs", ".js", ".json", ".txt"],
+"correctIndex": 0,
+"explanation": ".mjs explicitly supports ES modules."
+},
+{
+"id": 299,
+"level": "medium",
+"question": "Which attribute enables module script?",
+"options": ["type=module", "module", "script-module", "esm"],
+"correctIndex": 0,
+"explanation": "type module enables ES modules."
+},
+{
+"id": 300,
+"level": "medium",
+"question": "Which keyword exports variables?",
+"options": ["export", "module", "share", "public"],
+"correctIndex": 0,
+"explanation": "export exposes variables."
+}
 ]
