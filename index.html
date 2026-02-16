@@ -3,39 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Fundamental Quiz App</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/animations.css">
 </head>
 
-<body class="text-light">
+<body class="bg-dark text-light">
 
-  <div class="container min-vh-100 d-flex justify-content-center align-items-center">
+<div class="container min-vh-100 d-flex justify-content-center align-items-center">
 
-    <div class="quiz-card text-center col-12 col-md-6 col-lg-4">
+  <div id="mainCard" class="result-card text-center  nano-hidden">
 
-      <h2 class="mb-3 fw-bold">Fundamental Quiz App</h2>
-      <p class="mb-4 text-secondary">Choose a topic</p>
+    <h2 class="mb-3 fw-bold">Fundamental Quiz App</h2>
+    <p class="mb-4 text-secondary">Choose a topic</p>
 
-      <div class="d-grid gap-3">
-        <button class="level-btn easy" onclick="selectTopic('html')">HTML</button>
-        <button class="level-btn medium" onclick="selectTopic('css')">CSS</button>
-        <button class="level-btn hard" onclick="selectTopic('bootstrap')">Bootstrap</button>
-        <button class="level-btn hard" onclick="selectTopic('javascript')">JavaScript</button>
-      </div>
-
+    <div class="d-grid gap-3 nano-stagger" id="topicBtns">
+      <button class="level-btn easy" onclick="go('html')">HTML</button>
+      <button class="level-btn medium" onclick="go('css')">CSS</button>
+      <button class="level-btn hard" onclick="go('bootstrap')">Bootstrap</button>
+      <button class="level-btn hard" onclick="go('javascript')">JavaScript</button>
     </div>
 
   </div>
 
-  <script>
-    function selectTopic(topic) {
-      localStorage.setItem("selectedTopic", topic);
-      window.location.href = "level.html";
-    }
-  </script>
+</div>
+
+<script src="js/animations.js"></script>
+<script>
+  nanoReveal("mainCard", 200);
+  nanoStagger("topicBtns", 400);
+
+  function go(topic) {
+    localStorage.setItem("selectedTopic", topic);
+    nanoExit("level.html");
+  }
+</script>
 
 </body>
 </html>

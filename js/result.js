@@ -1,40 +1,37 @@
-// ============================================
-// RESULT PAGE LOGIC
-// ============================================
-
 function loadResultPage() {
-  const result = JSON.parse(localStorage.getItem("result"));
-  if (!result) return;
+  const r = JSON.parse(localStorage.getItem("result"));
+  if (!r) return;
 
-  const { topic, level, correct, wrong, total } = result;
+  // SAFE DOM SETTERS
+  const topicEl = document.getElementById("topicText");
+  const levelEl = document.getElementById("levelText");
+  const totalEl = document.getElementById("totalText");
+  const correctEl = document.getElementById("correctText");
+  const wrongEl = document.getElementById("wrongText");
+  const scoreEl = document.getElementById("scoreText");
+  const bestEl = document.getElementById("bestScoreText");
 
-  // Save attempt
-  saveAttempt(result);
+  if (topicEl) topicEl.textContent = `Topic: ${r.topic.toUpperCase()}`;
+  if (levelEl) levelEl.textContent = `Level: ${r.level.toUpperCase()}`;
+  if (totalEl) totalEl.textContent = `Total Questions: ${r.total}`;
+  if (correctEl) correctEl.textContent = `Correct Answers: ${r.correct}`;
+  if (wrongEl) wrongEl.textContent = `Wrong Answers: ${r.wrong}`;
+  if (scoreEl) scoreEl.textContent = `Score: ${r.correct} / ${r.total}`;
 
-  const stored = getStoredResult(topic, level);
+  // BEST SCORE (FIXED)
+  const key = `${r.topic}_${r.level}_best`;
+  const storedBest = Number(localStorage.getItem(key)) || 0;
+  const best = Math.max(r.correct, storedBest);
 
-  // DOM elements
-  document.getElementById("topicText").textContent =
-    `Topic: ${topic.toUpperCase()} | Level: ${level.toUpperCase()}`;
+  localStorage.setItem(key, best);
 
-  document.getElementById("totalText").textContent =
-    `Total Questions: ${total}`;
+  if (bestEl) {
+    bestEl.textContent = `Best Score: ${best} / ${r.total}`;
+  }
 
-  document.getElementById("correctText").textContent =
-    `Correct Answers: ${correct}`;
-
-  document.getElementById("wrongText").textContent =
-    `Wrong Answers: ${wrong}`;
-
-  document.getElementById("scoreText").textContent =
-    `Your Score: ${correct} / ${total}`;
-
-  document.getElementById("bestScoreText").textContent =
-    `Best Score: ${stored.bestScore} / ${total}`;
-
-  // Buttons
+  // BUTTON ACTIONS
   document.getElementById("restartBtn").onclick = () => {
-    window.location.href = "level.html";
+    window.location.href = "quiz.html";
   };
 
   document.getElementById("homeBtn").onclick = () => {

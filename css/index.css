@@ -1,28 +1,85 @@
-/* ===============================
-   GLOBAL
-================================ */
+/* ======================================================
+   GLOBAL RESET + THEME
+====================================================== */
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: #0d0d0d;
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #020617, #000000 75%);
   font-family: "Segoe UI", system-ui, sans-serif;
+  color: #e5e7eb;
+}
+
+/* ======================================================
+   SHARED CARD STYLE (Index, Level, Quiz, Result)
+====================================================== */
+.quizCard,
+.quiz-card,
+.result-card,
+.card {
+  background: linear-gradient(145deg, #0f172a, #020617);
+  border-radius: 20px;
+  padding: 40px 32px;
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.85),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 /* ===============================
-   CARD
+   CARD WIDTH CONSISTENCY
 ================================ */
-.quiz-card {
-  background: #1f2933;
-  border-radius: 16px;
-  padding: 40px 30px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+.quiz-card,
+.quizCard,
+.result-card {
+  width: 100%;
+  max-width: 420px;
+  margin: auto;
 }
 
-/* ===============================
-   BUTTON BASE
-================================ */
-.level-btn {
+/* Mobile */
+@media (max-width: 576px) {
+  .quiz-card,
+  .quizCard,
+  .result-card {
+    max-width: 92%;
+  }
+}
+
+
+/* Mobile card spacing */
+@media (max-width: 576px) {
+  .quizCard,
+  .quiz-card,
+  .result-card,
+  .card {
+    padding: 24px 20px;
+  }
+}
+
+/* ======================================================
+   HEADINGS & TEXT
+====================================================== */
+h1, h2, h3, h4, h5 {
+  color: #f9fafb;
+  font-weight: 700;
+}
+
+p {
+  color: #cbd5f5;
+  margin-bottom: 0.6rem;
+}
+
+/* ======================================================
+   BUTTON BASE (TOPIC / LEVEL / ACTIONS)
+====================================================== */
+.level-btn,
+.btn {
   width: 100%;
   padding: 14px;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 600;
   border-radius: 12px;
   border: none;
@@ -30,24 +87,22 @@ body {
   transition: all 0.25s ease;
 }
 
-/* ===============================
-   HOVER EFFECT
-================================ */
-.level-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+/* Hover shine */
+.level-btn:hover,
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(255, 255, 255, 0.12);
 }
 
-/* ===============================
-   ACTIVE EFFECT
-================================ */
-.level-btn:active {
+/* Active press */
+.level-btn:active,
+.btn:active {
   transform: scale(0.97);
 }
 
-/* ===============================
+/* ======================================================
    DIFFICULTY COLORS
-================================ */
+====================================================== */
 .level-btn.easy {
   background: linear-gradient(135deg, #22c55e, #16a34a);
   color: #ffffff;
@@ -61,4 +116,160 @@ body {
 .level-btn.hard {
   background: linear-gradient(135deg, #ef4444, #b91c1c);
   color: #ffffff;
+}
+
+/* ======================================================
+   QUIZ OPTIONS (MOST IMPORTANT FIX)
+====================================================== */
+#optionsContainer .list-group-item,
+.list-group-item,
+.list-group-item-action {
+  background-color: #ffffff !important; /* darker than card */
+  color: #000000 !important;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  margin-bottom: 14px;
+  padding: 16px 18px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Hover effect */
+#optionsContainer .list-group-item:hover {
+  background-color: #5b7fd2b9 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.14);
+}
+
+/* Remove Bootstrap focus blue */
+.list-group-item:focus,
+.list-group-item:active {
+  background-color: #0f172a !important;
+  color: #ffffff !important;
+  outline: none;
+}
+
+/* Disabled state */
+.list-group-item:disabled {
+  opacity: 0.85;
+  cursor: not-allowed;
+}
+
+/* ======================================================
+   CORRECT / WRONG STATES
+====================================================== */
+.list-group-item.bg-success {
+  background: linear-gradient(135deg, #22c55e, #16a34a) !important;
+  color: #ffffff !important;
+  border: none;
+}
+
+.list-group-item.bg-danger {
+  background: linear-gradient(135deg, #ef4444, #b91c1c) !important;
+  color: #ffffff !important;
+  border: none;
+}
+
+/* ======================================================
+   RESULT PAGE SPECIFIC
+====================================================== */
+.result-card {
+  max-width: 420px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+/* Score emphasis */
+#scoreText {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #facc15;
+}
+
+/* Best score */
+#bestScoreText {
+  font-weight: 600;
+  color: #fbbf24;
+}
+
+/* ======================================================
+   NAV BUTTONS (QUIZ)
+====================================================== */
+#backBtn {
+  background: transparent;
+  border: 1px solid #475569;
+  color: #e5e7eb;
+}
+
+#nextBtn {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+}
+
+#nextBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ======================================================
+   RESPONSIVE TEXT SCALE
+====================================================== */
+@media (max-width: 576px) {
+  h2 { font-size: 1.4rem; }
+  h4 { font-size: 1.1rem; }
+  p  { font-size: 0.95rem; }
+}
+
+/* ===============================
+   RESULT PAGE POLISH
+================================ */
+
+.result-card {
+  background: #020617; /* slightly lighter than bg */
+  border-radius: 22px;
+  padding: 42px 36px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.7),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+/* Stats spacing */
+.result-stats p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #cbd5f5;
+}
+
+/* Score highlight */
+.score-box h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #facc15;
+}
+
+.score-box p {
+  font-size: 0.95rem;
+}
+
+/* Buttons spacing fix */
+.result-card .btn {
+  padding: 12px;
+  font-weight: 600;
+  border-radius: 12px;
+}
+
+/* Mobile tuning */
+@media (max-width: 576px) {
+  .result-card {
+    padding: 32px 24px;
+    max-width: 92%;
+  }
+
+  .score-box h3 {
+    font-size: 1.4rem;
+  }
 }

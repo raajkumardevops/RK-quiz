@@ -1,53 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Result | Fundamental Quiz App</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Result</title>
 
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body class="bg-dark text-light">
 
-<div class="container min-vh-100 d-flex justify-content-center align-items-center">
+  <div class="container min-vh-100 d-flex justify-content-center align-items-center">
 
-  <div class="card bg-secondary p-4 text-center" style="max-width:500px;width:100%;">
+    <div class="result-card text-center">
 
-    <h3 class="mb-3">Quiz Result</h3>
+      <h2 class="mb-2 fw-bold">Quiz Result</h2>
 
-    <p id="topicText" class="fw-semibold"></p>
+      <p id="topicText" class="text-secondary mb-1"></p>
+      <p id="levelText" class="text-secondary mb-3"></p>
 
-    <p id="totalText"></p>
-    <p id="correctText"></p>
-    <p id="wrongText"></p>
+      <div class="result-stats mb-3">
+        <p id="totalText"></p>
+        <p id="correctText"></p>
+        <p id="wrongText"></p>
+      </div>
 
-    <h4 id="scoreText" class="mt-2"></h4>
-    <p id="bestScoreText" class="text-warning"></p>
+      <div class="score-box my-3">
+        <h3 id="scoreText"></h3>
+        <p id="bestScoreText" class="text-warning"></p>
+      </div>
 
-    <div class="d-flex justify-content-between mt-4">
-      <button id="restartBtn" class="btn btn-warning w-50 me-2">
-        Retry
-      </button>
-      <button id="homeBtn" class="btn btn-light w-50 ms-2">
-        Home
-      </button>
+      <div class="d-flex gap-3 mt-4">
+        <button id="restartBtn" class="btn btn-warning w-100">Retry</button>
+        <button id="homeBtn" class="btn btn-light w-100">Home</button>
+      </div>
+
     </div>
 
   </div>
 
-</div>
-
-<!-- Storage FIRST -->
-<script src="js/storage.js"></script>
-
-<!-- Result Logic -->
-<script src="js/result.js"></script>
+  <!-- Logic -->
+  <script src="js/storage.js"></script>
+  <script src="js/result.js"></script>
+  <script src="js/animations.js"></script>
 
 <script>
+  // LOAD RESULT DATA (THIS WAS MISSING)
   loadResultPage();
+
+  // OPTIONAL animations (safe now)
+  nanoReveal("scoreText", 200);
 </script>
 
 </body>
