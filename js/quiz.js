@@ -196,11 +196,6 @@ nextBtn.onclick = () => {
   render();
 };
 
-backBtn.onclick = () => {
-  if (index === 0) return;
-  index--;
-  render();
-};
 
 // ============================================
 // START QUIZ
